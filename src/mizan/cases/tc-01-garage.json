@@ -1,0 +1,219 @@
+{
+  "id": "tc-01-garage",
+  "story": "A car has been left in the father's garage for 5 years. The inheritance case keeps being adjourned. One heir sabotages and refuses to sign. Some of the father's bank accounts are hidden.",
+  "extract": {
+    "parties": {
+      "ar": "وريث يسأل. الأب متوفى. وريث آخر يرفض الإمضاء ويعرقل. باقي الورثة غير مسمَّين.",
+      "fr": "Un héritier demande. Le père est décédé. Un autre héritier refuse de signer et bloque. Les autres héritiers ne sont pas nommés."
+    },
+    "asset": {
+      "ar": "سيارة في كراج الأب منذ سنوات. حسابات بنكية يُقال إنها مخفية. لا وصف لحالتها ولا اسم البنك.",
+      "fr": "Une voiture dans le garage du père depuis des années. Des comptes bancaires dits cachés. Ni l'état de la voiture ni le nom de la banque."
+    },
+    "opponent_did": {
+      "ar": "يرفض الإمضاء ويعرقل سير الملف.",
+      "fr": "Il refuse de signer et entrave le dossier."
+    },
+    "duration": {
+      "ar": "السيارة في الكراج خمس سنوات. الدعوى تُؤجَّل. عدد التأجيلات غير مذكور.",
+      "fr": "La voiture est au garage depuis cinq ans. L'affaire est renvoyée. Le nombre de renvois n'est pas dit."
+    },
+    "proceedings": {
+      "ar": "دعوى تركة قائمة وتُؤجَّل. رقم القضية والمحكمة غير مذكورين.",
+      "fr": "Une action successorale existe et est renvoyée. Numéro et tribunal non donnés."
+    },
+    "documents_have": [],
+    "documents_unknown": [
+      { "ar": "رقم القضية والجهة", "fr": "Numéro d'affaire et juridiction" },
+      { "ar": "شهادة الوفاة والفريضة", "fr": "Certificat de décès et dévolution" },
+      { "ar": "بطاقة السيارة واسم مالكها في الورق", "fr": "Carte grise et nom du propriétaire sur le papier" },
+      { "ar": "اسم البنك أو ما يُثبت وجود الحساب", "fr": "Nom de la banque ou preuve que le compte existe" }
+    ],
+    "wilaya": null,
+    "urgency": {
+      "ar": "السيارة راكدة سنوات. خطر تلفها أسبق من تصفية الحسابات.",
+      "fr": "La voiture est immobile depuis des années. Son dépérissement passe avant la liquidation des comptes."
+    }
+  },
+  "paths": ["succession", "criminal-complaint"],
+  "questions": [
+    {
+      "id": "q-court",
+      "rank": 1,
+      "prompt": { "ar": "في أي ولاية ومحكمة رقم قضية التركة؟", "fr": "Dans quelle wilaya, quel tribunal, et quel numéro l'affaire successorale est-elle ?" },
+      "changes": { "ar": "يغيّر المكان. بلا رقم لا نعرف أي قاضٍ نطلب منه التاريخ.", "fr": "Change le lieu. Sans numéro, on ne sait pas quel juge saisir pour la date." }
+    },
+    {
+      "id": "q-car",
+      "rank": 2,
+      "prompt": { "ar": "باسم من سُجّلت السيارة، وهل بدنها أو أوراقها تتلف الآن؟", "fr": "À quel nom la voiture est-elle enregistrée, et sa carrosserie ou ses papiers se dégradent-ils maintenant ?" },
+      "changes": { "ar": "يقرر إن كان الحفظ العاجل أولى من انتظار القسمة.", "fr": "Décide si la conservation urgente passe avant d'attendre le partage." }
+    },
+    {
+      "id": "q-heirs",
+      "rank": 3,
+      "prompt": { "ar": "من كل الورثة، ومن القاصر فيهم، ومن يحضر الجلسات؟", "fr": "Qui sont tous les héritiers, qui est mineur, et qui vient aux audiences ?" },
+      "changes": { "ar": "القسمة تُرفع على الجميع. إسقاط اسم يوقفها. القاصر لا يُوقَّع عنه.", "fr": "Le partage vise tout le monde. Oublier un nom l'arrête. On ne signe pas pour un mineur." }
+    },
+    {
+      "id": "q-banks",
+      "rank": 4,
+      "prompt": { "ar": "ما اسم البنك، وما الذي رأيته يثبت حساباً لم يُذكر في الملف؟", "fr": "Quel est le nom de la banque, et qu'avez-vous vu qui prouve un compte absent du dossier ?" },
+      "changes": { "ar": "الشك وحده لا يفتح شكوى إخفاء. الورق يفرّق بين طلب كشف وبين شكوى.", "fr": "Le doute seul n'ouvre pas une plainte pour dissimulation. Le papier sépare la demande de recherche et la plainte." }
+    }
+  ],
+  "ladder": [
+    {
+      "id": "em-preserve",
+      "rung": "emergency",
+      "urgent": true,
+      "title": { "ar": "اطلب حفظ السيارة حيث هي", "fr": "Demandez que la voiture soit conservée où elle est", "darija": "الطوموبيل تبقى في بلاصتها" },
+      "where": { "ar": "نفس محكمة دعوى التركة إن عرفت رقمها، وإلا أمانة ضبط محكمة {wilaya} لتسأل أي قاضٍ ينظر الطلب العاجل. لا تختر القسم من ذاكرتك.", "fr": "Le tribunal de l'affaire successorale si vous avez le numéro, sinon le greffe de {wilaya} pour savoir quel juge voit la demande urgente. Ne choisissez pas la section de mémoire." },
+      "file": { "ar": "طلب مستعجل لحفظ السيارة: جرد قضائي أو حراسة، حتى لا تُنقل ولا تُفرَّغ قبل القسمة. الصيغة الدقيقة يراجعها أمين الضبط أو محامٍ بطلب تسعيرة.", "fr": "Demande urgente de conserver la voiture : inventaire judiciaire ou séquestre, pour qu'elle ne soit ni déplacée ni vidée avant le partage. La formule exacte se vérifie au greffe ou chez un avocat sur devis." },
+      "bring": [
+        { "id": "case-no", "label": { "ar": "رقم قضية التركة إن وُجد", "fr": "Le numéro de l'affaire successorale, s'il existe" } },
+        { "id": "car-paper", "label": { "ar": "أي ورقة للسيارة أو صور لها في الكراج", "fr": "Tout papier de la voiture, ou des photos d'elle dans le garage" } }
+      ],
+      "deadline": {
+        "status": "TO_VERIFY",
+        "days": null,
+        "text": { "ar": "لا أجل مخزّن لهذا الطلب. اسأل أمانة الضبط يوم الإيداع.", "fr": "Aucun délai stocké pour cette demande. Demandez au greffe le jour du dépôt." }
+      },
+      "cost": { "kind": "ASK_DEVIS", "min_da": null, "max_da": null, "currency": "DZD", "last_updated": null, "source": null },
+      "articles": [],
+      "risks": { "ar": "هذا وصف مسار لا نص. القاضي قد يرفض إن لم يرَ الاستعجال. السيارة قد تتلف أثناء الانتظار.", "fr": "Ceci décrit un chemin, pas un texte. Le juge peut refuser s'il ne voit pas l'urgence. La voiture peut dépérir pendant l'attente." },
+      "next_action": { "ar": "لا تحرّك السيارة، واسأل أمانة الضبط أي طلب حفظ يُودَع على ملف التركة.", "fr": "Ne déplacez pas la voiture, et demandez au greffe quelle demande de conservation se dépose sur le dossier successoral." },
+      "tip_darija": "ما تطلّعش الطوموبيل بروحك.",
+      "do_not": [
+        { "ar": "لا تنقل السيارة بنفسك ولا تخرجها من الكراج.", "fr": "Ne déplacez pas la voiture vous-même et ne la sortez pas du garage." }
+      ]
+    },
+    {
+      "id": "em-constat",
+      "rung": "emergency",
+      "urgent": true,
+      "title": { "ar": "محضر معاينة لحالتها", "fr": "Constat de son état", "darija": null },
+      "where": { "ar": "محضر قضائي في ولاية الكراج، يعاين السيارة في مكانها.", "fr": "Un huissier dans la wilaya du garage, qui constate la voiture sur place." },
+      "file": { "ar": "طلب معاينة مكتوب: المكان، وصف السيارة، أن تبقى في مكانها أثناء المعاينة.", "fr": "Demande de constat écrite : le lieu, la description de la voiture, et qu'elle reste sur place pendant le constat." },
+      "bring": [
+        { "id": "access", "label": { "ar": "كيف يُفتح الكراج قانوناً دون كسر", "fr": "Comment le garage s'ouvre légalement, sans effraction" } }
+      ],
+      "deadline": {
+        "status": "TO_VERIFY",
+        "days": null,
+        "text": { "ar": "لا أجل مخزّن. كل أسبوع زائد يغيّر وصف التلف.", "fr": "Aucun délai stocké. Chaque semaine change la description de la dégradation." }
+      },
+      "cost": { "kind": "ASK_DEVIS", "min_da": null, "max_da": null, "currency": "DZD", "last_updated": null, "source": null },
+      "articles": [],
+      "risks": { "ar": "المعاينة تُثبّت الحالة. لا تنقل الملكية ولا تمنع وارثاً وحدها.", "fr": "Le constat fixe l'état. Il ne transfère pas la propriété et n'arrête pas un héritier à lui seul." },
+      "next_action": { "ar": "اتصل بمحضر واطلب التسعيرة قبل أن تحدّد موعد المعاينة.", "fr": "Appelez un huissier et demandez le devis avant de fixer le constat." },
+      "tip_darija": null,
+      "do_not": [
+        { "ar": "لا تصلح السيارة ولا تفككها قبل المعاينة.", "fr": "Ne réparez pas la voiture et ne la démontez pas avant le constat." }
+      ]
+    },
+    {
+      "id": "main-partition",
+      "rung": "main",
+      "urgent": false,
+      "title": { "ar": "قسمة قضائية لا تنتظر إمضاءه", "fr": "Un partage judiciaire qui n'attend pas sa signature", "darija": null },
+      "where": { "ar": "ملف التركة المفتوح. إن لم يُطلب فيه القسم بعد، عريضة أمام القسم الذي يعيّنه أمين الضبط.", "fr": "Le dossier successoral ouvert. Si le partage n'y est pas encore demandé, une requête devant la section que le greffe désigne." },
+      "file": { "ar": "طلب قسمة قضائية ضد كل الورثة. اذكر السيارة والحسابات التي تعرفها كأموال تُجرد لا كأموال حُسم أمرها.", "fr": "Demande de partage judiciaire contre tous les héritiers. Citez la voiture et les comptes connus comme des biens à inventorier, pas comme des biens déjà tranchés." },
+      "bring": [
+        { "id": "adjournments", "label": { "ar": "كل إشعارات التأجيل التي عندك", "fr": "Tous les avis de renvoi que vous avez" } },
+        { "id": "heirs", "label": { "ar": "قائمة الورثة", "fr": "Liste des héritiers" } }
+      ],
+      "deadline": {
+        "status": "TO_VERIFY",
+        "days": null,
+        "text": { "ar": "الأجل غير مثبت. أكّده عند أمانة الضبط قبل الإيداع.", "fr": "Délai non établi. Confirmez-le au greffe avant de déposer." }
+      },
+      "cost": { "kind": "ASK_DEVIS", "min_da": null, "max_da": null, "currency": "DZD", "last_updated": null, "source": null },
+      "articles": [],
+      "risks": { "ar": "رفض الإمضاء ليس قفلاً. نسيان وريث أو قاصر في العريضة قفل حقيقي.", "fr": "Le refus de signer n'est pas un verrou. Oublier un héritier ou un mineur dans la requête est un vrai verrou." },
+      "next_action": { "ar": "في الجلسة القادمة اطلب القسمة كتابةً وسمِّ كل وريث.", "fr": "À la prochaine audience, demandez le partage par écrit et nommez chaque héritier." },
+      "tip_darija": null,
+      "do_not": [
+        { "ar": "لا تتنازل عن حصة أحد لشراء هدوء الوارث الرافض.", "fr": "Ne cédez la part de personne pour acheter le calme de l'héritier qui refuse." }
+      ]
+    },
+    {
+      "id": "pressure-accounts",
+      "rung": "pressure",
+      "urgent": false,
+      "title": { "ar": "اطلب من القاضي طريق كشف الحسابات", "fr": "Demandez au juge la voie pour retrouver les comptes", "darija": null },
+      "where": { "ar": "قاضي ملف التركة، وفي مكتوب لا في حديث الرواق.", "fr": "Le juge du dossier successoral, par écrit, pas dans le couloir." },
+      "file": { "ar": "طلب مكتوب بأن تُجرد حسابات المتوفى لدى البنوك التي تسمّيها، وأن يصرّح كل وريث بما يعرفه من المال. لا تقل إن السرية رُفعت: اسأل القاضي إن كان هذا الطلب مقبولاً في ملفك.", "fr": "Demande écrite d'inventorier les comptes du défunt dans les banques que vous nommez, et que chaque héritier déclare ce qu'il sait des biens. Ne dites pas que le secret est levé : demandez au juge si cette demande est recevable dans votre dossier." },
+      "bring": [
+        { "id": "bank-clue", "label": { "ar": "أي بطاقة أو رسالة أو تحويل رأيته", "fr": "Toute carte, lettre ou virement que vous avez vu" } }
+      ],
+      "deadline": {
+        "status": "TO_VERIFY",
+        "days": null,
+        "text": { "ar": "لا أجل مخزّن. قدِّمه في أقرب جلسة مكتوبة.", "fr": "Aucun délai stocké. Déposez-le à la prochaine audience, par écrit." }
+      },
+      "cost": { "kind": "ASK_DEVIS", "min_da": null, "max_da": null, "currency": "DZD", "last_updated": null, "source": null },
+      "articles": [],
+      "risks": { "ar": "وجود الحساب غير مثبت في قصتك. الطلب قد يُرفض أو يُضيَّق على ما تسمّيه من بنوك.", "fr": "L'existence du compte n'est pas établie dans votre récit. La demande peut être refusée ou limitée aux banques que vous nommez." },
+      "next_action": { "ar": "اكتب اسم كل بنك تعرفه في طلب واحد وسلّمه في الجلسة.", "fr": "Écrivez le nom de chaque banque que vous connaissez dans une seule demande et remettez-la à l'audience." },
+      "tip_darija": null,
+      "do_not": [
+        { "ar": "لا تدخل وكالة بنكية باسم أبيك ولا تسحب مالاً.", "fr": "N'entrez pas dans une agence au nom de votre père et ne retirez pas d'argent." }
+      ]
+    },
+    {
+      "id": "pressure-complaint",
+      "rung": "pressure",
+      "urgent": false,
+      "title": { "ar": "الشكوى فقط إن ثبُت الإخفاء", "fr": "La plainte seulement si la dissimulation est établie", "darija": null },
+      "where": { "ar": "نيابة المحكمة التي يقع في دائرتها الفعل، بعد أن يكون عندك ورق لا مجرد شك.", "fr": "Le parquet du tribunal du lieu des faits, une fois que vous avez du papier, pas un simple doute." },
+      "file": { "ar": "شكوى تصف واقعة محددة: من أخذ ماذا ومتى. إن لم تملك هذه الواقعة فلا تودع الشكوى بعد.", "fr": "Plainte qui décrit un fait précis : qui a pris quoi, et quand. Sans ce fait, ne déposez pas encore la plainte." },
+      "bring": [
+        { "id": "proof", "label": { "ar": "الورق الذي يُظهر الإخفاء، لا الظن", "fr": "Le papier qui montre la dissimulation, pas le soupçon" } }
+      ],
+      "deadline": {
+        "status": "TO_VERIFY",
+        "days": null,
+        "text": { "ar": "لا أجل مخزّن. الشكوى الكيدية خطر إن بالغت قبل الدليل.", "fr": "Aucun délai stocké. Une plainte abusive est un risque si vous exagérez avant la preuve." }
+      },
+      "cost": { "kind": "ASK_DEVIS", "min_da": null, "max_da": null, "currency": "DZD", "last_updated": null, "source": null },
+      "articles": [],
+      "risks": { "ar": "القصّة تقول إن حسابات مخفية. هذا ظن حتى يثبته ورق. الشكوى قبله قد تنقلب عليك.", "fr": "Le récit dit que des comptes sont cachés. C'est un soupçon tant qu'un papier ne le prouve pas. La plainte avant cela peut se retourner." },
+      "next_action": { "ar": "لا تودع شكوى اليوم. اجمع الورق أولاً ثم أعد السؤال.", "fr": "Ne déposez pas de plainte aujourd'hui. Réunissez le papier d'abord, puis reposez la question." },
+      "tip_darija": null,
+      "do_not": [
+        { "ar": "لا تتهم وارثاً في محضر بلا ورقة.", "fr": "N'accusez pas un héritier dans un procès-verbal sans papier." }
+      ]
+    },
+    {
+      "id": "unblock-calendar",
+      "rung": "unblock",
+      "urgent": false,
+      "title": { "ar": "قيّد كل تأجيل واطلب تاريخاً ثابتاً", "fr": "Notez chaque renvoi et demandez une date ferme", "darija": null },
+      "where": { "ar": "نفس الملف، في جلسة، بطلب مكتوب يُرفق بالمحاضر.", "fr": "Le même dossier, à l'audience, par une demande écrite jointe aux procès-verbaux." },
+      "file": { "ar": "طلب تحديد تاريخ عدم تجاوزه، مع جدول التأجيلات: التاريخ، من طلبه، ولماذا.", "fr": "Demande d'une date à ne pas dépasser, avec le tableau des renvois : date, qui l'a demandé, et pourquoi." },
+      "bring": [
+        { "id": "log", "label": { "ar": "جدول التأجيلات من أوراقك", "fr": "Le tableau des renvois tiré de vos papiers" } }
+      ],
+      "deadline": {
+        "status": "TO_VERIFY",
+        "days": null,
+        "text": { "ar": "لا أجل مخزّن لطلب ضبط الجلسات.", "fr": "Aucun délai stocké pour la demande de cadrer les audiences." }
+      },
+      "cost": { "kind": "ASK_DEVIS", "min_da": null, "max_da": null, "currency": "DZD", "last_updated": null, "source": null },
+      "articles": [],
+      "risks": { "ar": "القاضي لا يُلزم بجدولك. الورق يمنع أن تُروى التأجيلات بلا تاريخ.", "fr": "Le juge n'est pas lié par votre tableau. Le papier empêche que les renvois se racontent sans date." },
+      "next_action": { "ar": "اصنع جدولاً من ثلاثة أعمدة وأرفقه في الجلسة القادمة.", "fr": "Faites un tableau de trois colonnes et joignez-le à la prochaine audience." },
+      "tip_darija": null,
+      "do_not": []
+    }
+  ],
+  "checklist": [
+    { "id": "c1", "label": { "ar": "لم أنقل السيارة", "fr": "Je n'ai pas déplacé la voiture" } },
+    { "id": "c2", "label": { "ar": "عندي رقم القضية أو سألت الغريف عنه", "fr": "J'ai le numéro d'affaire ou je l'ai demandé au greffe" } },
+    { "id": "c3", "label": { "ar": "قائمة كل الورثة بمن فيهم الرافض والقاصر", "fr": "Liste de tous les héritiers, y compris le récalcitrant et le mineur" } },
+    { "id": "c4", "label": { "ar": "جدول التأجيلات", "fr": "Tableau des renvois" } },
+    { "id": "c5", "label": { "ar": "طلبت تسعيرة المحضر قبل المعاينة", "fr": "J'ai demandé le devis de l'huissier avant le constat" } },
+    { "id": "c6", "label": { "ar": "لم أودع شكوى بلا ورق", "fr": "Je n'ai pas déposé de plainte sans papier" } }
+  ]
+}

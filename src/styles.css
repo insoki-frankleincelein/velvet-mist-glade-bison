@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f3efe6;
+  --color-sheet: #fbf8f2;
+  --color-ink: #1a2330;
+  --color-muted: #4a5560;
+  --color-line: #e0d8c8;
+  --color-green: #1e4636;
+  --color-green-soft: #e4eee8;
+  --color-on-green: #f4f1ea;
+  --color-seal: #8d3b32;
+  --color-seal-soft: #f8ebe8;
+  --font-sans: "IBM Plex Sans Arabic", "Segoe UI", system-ui, sans-serif;
+  --font-display: Amiri, "Noto Naskh Arabic", serif;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  html {
+    background: var(--color-paper);
+    color: var(--color-ink);
+  }
+  body {
+    font-family: var(--font-sans);
+    text-rendering: optimizeLegibility;
+    margin: 0;
+  }
+  ::selection {
+    background: var(--color-green-soft);
+  }
+}
+
+html.dark {
+  --color-paper: #121614;
+  --color-sheet: #1b2320;
+  --color-ink: #f3efe6;
+  --color-muted: #c9bfb0;
+  --color-line: #31403a;
+  --color-green: #9dccb4;
+  --color-green-soft: #24362d;
+  --color-on-green: #102019;
+  --color-seal: #f0b2ab;
+  --color-seal-soft: #3a2624;
+  color-scheme: dark;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

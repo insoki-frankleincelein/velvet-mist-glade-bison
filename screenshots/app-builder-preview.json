@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "ميزان — المسار القانوني",
+      "hasCanvas": false,
+      "bodyTextLen": 3185,
+      "bodyTextHash": "01faa64704627e1a8c8c68487b48061dfbfaba9a5752a046c98605755404eea7",
+      "bodyTextPrefix": "ميزان MIZAN القضايا أصل القانون الولاية اختر الولاية 01 · أدرار ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "ميزان — المسار القانوني",
+      "hasCanvas": false,
+      "bodyTextLen": 3185,
+      "bodyTextHash": "7a7e9c10fd16ec8dfc83b985bc42636327ffd3b11c0ea373c1c4a3553188612f",
+      "bodyTextPrefix": "ميزان MIZAN الولاية اختر الولاية 01 · أدرار 02 · الشلف 03 · الأغ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

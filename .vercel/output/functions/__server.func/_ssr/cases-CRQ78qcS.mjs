@@ -1,0 +1,1897 @@
+//#region node_modules/.nitro/vite/services/ssr/assets/cases-CRQ78qcS.js
+var groups = [
+	{
+		id: "family",
+		label: {
+			ar: "الأسرة",
+			fr: "Famille"
+		}
+	},
+	{
+		id: "work",
+		label: {
+			ar: "العمل",
+			fr: "Travail"
+		}
+	},
+	{
+		id: "civil",
+		label: {
+			ar: "المال والعقود",
+			fr: "Argent et contrats"
+		}
+	},
+	{
+		id: "housing",
+		label: {
+			ar: "السكن",
+			fr: "Logement"
+		}
+	},
+	{
+		id: "penal",
+		label: {
+			ar: "الشكوى",
+			fr: "Plainte"
+		}
+	},
+	{
+		id: "papers",
+		label: {
+			ar: "الأوراق والإدارة",
+			fr: "Papiers et administration"
+		}
+	}
+];
+var tatliqGrounds = [
+	{
+		id: "g1",
+		label: {
+			ar: "عدم الإنفاق بعد حكم",
+			fr: "Défaut d'entretien après jugement"
+		},
+		proof: {
+			ar: "نسخة من الحكم الذي ألزم بالنفقة، وما يُثبت أنه لم يُنفَّذ (محضر امتناع أو كشف). هذا السبب يشترط حكماً سابقاً بالنفقة، لا مجرد الخلاف.",
+			fr: "Copie du jugement qui a ordonné l'entretien, et la preuve qu'il n'est pas exécuté. Ce motif suppose un jugement préalable, pas un simple désaccord."
+		}
+	},
+	{
+		id: "g2",
+		label: {
+			ar: "عيب يحول دون غاية الزواج",
+			fr: "Défaut empêchant le but du mariage"
+		},
+		proof: {
+			ar: "ما يقبل الطبيب أو القاضي الاطلاع عليه. لا تُفصَّل الأوصاف الطبية في العريضة أكثر مما يلزم لإثبات العيب.",
+			fr: "Ce que le médecin ou le juge peut examiner. La requête ne détaille pas plus qu'il ne faut pour établir le défaut."
+		}
+	},
+	{
+		id: "g3",
+		label: {
+			ar: "هجر المضجع فوق أربعة أشهر",
+			fr: "Abandon de la couche, plus de quatre mois"
+		},
+		proof: {
+			ar: "تحديد بداية المدة، وأنها جاوزت أربعة أشهر. الشهادة أو أي ظرف قابل للإثبات يُعرض في الجلسة لا في رسالة مفتوحة.",
+			fr: "Fixez le début de la période et le dépassement de quatre mois. Les témoignages se présentent à l'audience, pas dans une lettre ouverte."
+		}
+	},
+	{
+		id: "g4",
+		label: {
+			ar: "حكم جزائي ماس بشرف الأسرة",
+			fr: "Condamnation portant atteinte à l'honneur"
+		},
+		proof: {
+			ar: "نسخة من الحكم الجزائي. النص يشترط أن تستحيل معه مواصلة العشرة، فلا يكفي أي حكم.",
+			fr: "Copie du jugement pénal. Le texte exige que la vie commune soit devenue impossible : toute condamnation ne suffit pas."
+		}
+	},
+	{
+		id: "g5",
+		label: {
+			ar: "غيبة سنة بلا عذر ولا نفقة",
+			fr: "Absence d'un an sans excuse ni entretien"
+		},
+		proof: {
+			ar: "ما يُثبت الغياب لأكثر من سنة، وانتفاء العذر، وانتفاء النفقة. اجمع التواريخ في صفحة واحدة.",
+			fr: "Ce qui établit plus d'un an d'absence, l'absence d'excuse et l'absence d'entretien. Réunissez les dates sur une page."
+		}
+	},
+	{
+		id: "g6",
+		label: {
+			ar: "إخلال بقواعد التعدد",
+			fr: "Violation des règles de polygamie"
+		},
+		proof: {
+			ar: "عقد الزواج الجديد، وما يُظهر تخلف الإخبار أو ترخيص رئيس المحكمة المنصوص عليه في المادة 8.",
+			fr: "Le nouvel acte de mariage, et ce qui montre le défaut d'information ou d'autorisation du président du tribunal prévue à l'article 8."
+		}
+	},
+	{
+		id: "g7",
+		label: {
+			ar: "فاحشة مبينة",
+			fr: "Faute immorale établie"
+		},
+		proof: {
+			ar: "الواقعة تُثبت أمام القاضي. صُغ الطلب بواقعة محددة دون نشر تفاصيل لا يحتاجها الحكم.",
+			fr: "Le fait s'établit devant le juge. Formulez un fait précis, sans publier de détails dont le jugement n'a pas besoin."
+		}
+	},
+	{
+		id: "g8",
+		label: {
+			ar: "شقاق مستمر",
+			fr: "Discorde persistante"
+		},
+		proof: {
+			ar: "وقائع متكررة بتواريخ، وأي محضر أو شكوى أو محاولة صلح سابقة. الشقاق المستمر غير الخصام العابر.",
+			fr: "Des faits répétés, datés, et tout procès-verbal, plainte ou conciliation antérieure. La discorde persistante n'est pas une dispute isolée."
+		}
+	},
+	{
+		id: "g9",
+		label: {
+			ar: "إخلال بشرط في عقد الزواج",
+			fr: "Violation d'une clause du contrat"
+		},
+		proof: {
+			ar: "نسخة من عقد الزواج فيها الشرط، وبيان كيف خُولف. الشرط غير المكتوب في العقد لا يُبنى عليه هذا السبب.",
+			fr: "Copie du contrat contenant la clause, et en quoi elle a été violée. Une condition non écrite dans l'acte ne porte pas ce motif."
+		}
+	},
+	{
+		id: "g10",
+		label: {
+			ar: "ضرر معتبر شرعاً",
+			fr: "Préjudice légalement reconnu"
+		},
+		proof: {
+			ar: "صف الضرر في وقائع محددة (ماذا، متى، أثره). هذا البند ليس عبارة عامة تُلصق بأي خلاف.",
+			fr: "Décrivez le préjudice en faits précis : quoi, quand, quel effet. Ce chef n'est pas une formule à coller sur tout désaccord."
+		}
+	}
+];
+var violence = {
+	ar: "إذا كان هناك عنف، الشكوى أمام وكيل الجمهورية أو الأمن طريق مستقل. لا تنتظر جلسة الصلح لتبلغ عنه، ودعوى الأسرة لا تغني عن الحماية.",
+	fr: "En cas de violence, la plainte auprès du procureur ou de la police est une voie distincte. N'attendez pas la conciliation pour la déposer. L'affaire familiale ne remplace pas la protection."
+};
+var appealMoney = {
+	ar: "حكم الطلاق نفسه لا يُستأنف، إلا جوانبه المادية (التعويض، المبالغ، السكن). الحضانة تُستأنف. الأجل العام شهر من التبليغ إلى الشخص نفسه، وشهران إذا بُلّغ في موطنه الحقيقي أو المختار، ولا يسري في الحكم الغيابي إلا بعد أجل المعارضة. المقيم خارج الوطن يُزاد له شهران. اقرأ تاريخ التبليغ في المحضر.",
+	fr: "Le divorce lui-même n'est pas appelable, sauf ses aspects pécuniaires. La garde l'est. Délai général : un mois si la notification est à personne, deux mois au domicile réel ou élu. Pour un défaut, l'appel n'attend que la fin du délai d'opposition. Deux mois de plus si vous résidez à l'étranger. Lisez la date sur le procès-verbal."
+};
+var cases = [
+	{
+		id: "divorce",
+		group: "family",
+		title: {
+			ar: "الطلاق",
+			fr: "Divorce"
+		},
+		lead: {
+			ar: "لا يثبت الطلاق إلا بحكم، بعد صلح لا يتجاوز ثلاثة أشهر من رفع الدعوى. اختر الصورة أولاً: الإرادة، التراضي، التطليق، أو الخلع.",
+			fr: "Le divorce n'existe que par jugement, après une conciliation d'au plus trois mois. Choisissez d'abord la forme."
+		},
+		forum: {
+			ar: "قسم شؤون الأسرة بمحكمة {wilaya}. الاختصاص المحلي الدقيق (مسكن الزوجية أو موطن المدعى عليه) يؤكَّد في أمانة الضبط قبل دفع الرسوم.",
+			fr: "Section de la famille du tribunal de {wilaya}. La compétence locale exacte (domicile conjugal ou domicile du défendeur) se confirme au greffe avant les frais."
+		},
+		articleIds: [
+			"fam-48",
+			"fam-49",
+			"fam-57"
+		],
+		choice: {
+			question: {
+				ar: "من يطلب إنهاء الزواج، وعلى أي أساس؟",
+				fr: "Qui demande la fin du mariage, et sur quel fondement ?"
+			},
+			options: [
+				{
+					id: "husband",
+					label: {
+						ar: "الزوج بإرادته",
+						fr: "Le mari, par sa volonté"
+					},
+					detail: {
+						ar: "المادة 48. إن رأت المحكمة تعسفاً حكمت بالتعويض وفق المادة 52.",
+						fr: "Article 48. L'abus ouvre l'indemnité de l'article 52."
+					}
+				},
+				{
+					id: "mutual",
+					label: {
+						ar: "الاثنان بالتراضي",
+						fr: "Les deux, d'un commun accord"
+					},
+					detail: {
+						ar: "المادة 48. الصلح ما زال واجباً، والاتفاق على التبعات يُكتب في الطلبات.",
+						fr: "Article 48. La conciliation reste obligatoire. Écrivez les effets dans les demandes."
+					}
+				},
+				{
+					id: "tatliq",
+					label: {
+						ar: "الزوجة لأحد أسباب المادة 53",
+						fr: "L'épouse, pour un motif de l'article 53"
+					},
+					detail: {
+						ar: "عشرة أسباب مغلقة. اختر السبب في الخطوة الأولى وأرفق ما يثبته.",
+						fr: "Dix motifs limitatifs. Choisissez-en un à la première étape et joignez sa preuve."
+					}
+				},
+				{
+					id: "khul",
+					label: {
+						ar: "الزوجة بالخلع",
+						fr: "L'épouse, par khul'"
+					},
+					detail: {
+						ar: "المادة 54. لا تتوقف على موافقة الزوج. المقابل إما اتفاق أو تقدير القاضي في حدود صداق المثل.",
+						fr: "Article 54. L'accord du mari n'est pas requis. La contrepartie est convenue ou fixée par le juge dans la limite de la dot de parité."
+					}
+				}
+			]
+		},
+		steps: [
+			{
+				id: "file",
+				title: {
+					ar: "جهّز الورق قبل أن تتحرك",
+					fr: "Préparez les pièces avant de vous déplacer"
+				},
+				where: {
+					ar: "عندك. لا تودع ناقصاً إن كان النقص في هويتكما أو في عقد الزواج.",
+					fr: "Chez vous. Ne déposez pas sans vos identités et l'acte de mariage."
+				},
+				actions: [
+					{
+						ar: "استخرج عقد زواج حديثاً من بلدية مكان قيده، وشهادات ميلاد الأولاد إن وُجدوا.",
+						fr: "Demandez un acte de mariage récent à la commune de sa transcription, et les actes de naissance des enfants."
+					},
+					{
+						ar: "انسخ بطاقة التعريف أو ما يثبت الإقامة لكل طرف تعرفه.",
+						fr: "Copiez la pièce d'identité, ou la preuve de résidence, de chaque partie que vous connaissez."
+					},
+					{
+						ar: "اكتب الوقائع في نصف صفحة: التاريخ، مكان السكن، الطلب بالحرف (طلاق، أو تطليق للسبب الفلاني، أو خلع).",
+						fr: "Écrivez les faits en une demi-page : dates, logement, et la demande en toutes lettres."
+					}
+				],
+				bring: [
+					{
+						id: "m1",
+						label: {
+							ar: "عقد الزواج",
+							fr: "Acte de mariage"
+						}
+					},
+					{
+						id: "m2",
+						label: {
+							ar: "دفتر عائلي إن وُجد",
+							fr: "Livret de famille, s'il existe"
+						}
+					},
+					{
+						id: "m3",
+						label: {
+							ar: "بطاقة التعريف",
+							fr: "Pièce d'identité"
+						}
+					},
+					{
+						id: "m4",
+						label: {
+							ar: "شهادات ميلاد الأولاد",
+							fr: "Actes de naissance des enfants"
+						}
+					},
+					{
+						id: "m5",
+						label: {
+							ar: "ما يثبت عنوان المدعى عليه",
+							fr: "Preuve de l'adresse du défendeur"
+						}
+					}
+				],
+				articleIds: ["fam-48", "fam-49"],
+				caution: violence
+			},
+			{
+				id: "ground",
+				when: ["tatliq"],
+				grounds: true,
+				title: {
+					ar: "حدّد سبب المادة 53",
+					fr: "Fixez le motif de l'article 53"
+				},
+				where: {
+					ar: "في العريضة نفسها. السبب يُسمّى برقمه، ولا يُترك للقاضي ليتخيّله.",
+					fr: "Dans la requête elle-même. Nommez le motif par son numéro."
+				},
+				actions: [{
+					ar: "اختر سبباً واحداً أساسياً. يمكن ذكر سبب احتياطي إن كانت وقائعه مختلفة ومثبتة.",
+					fr: "Choisissez un motif principal. Un motif subsidiaire n'a de place que s'il a ses propres faits prouvés."
+				}, {
+					ar: "لا تلصق الأسباب العشرة. العريضة المزدحمة تُضعف السبب الذي تملك دليله.",
+					fr: "N'empilez pas les dix motifs. Une requête encombrée affaiblit celui que vous pouvez prouver."
+				}],
+				articleIds: ["fam-53"]
+			},
+			{
+				id: "khul-sum",
+				when: ["khul"],
+				title: {
+					ar: "سمِّ مقابل الخلع",
+					fr: "Nommez la contrepartie du khul'"
+				},
+				where: {
+					ar: "في الطلبات. إما مبلغ تتفقان عليه، أو أن تطلب من القاضي تقديره.",
+					fr: "Dans les demandes : une somme convenue, ou l'estimation par le juge."
+				},
+				actions: [{
+					ar: "إن اتفقتما، اكتب المبلغ وأن الأداء تم أو سيُودع. الاتفاق لا يلغي محاولة الصلح ولا الحكم.",
+					fr: "Si vous êtes d'accord, écrivez le montant et s'il est déjà payé. L'accord ne dispense ni de la conciliation ni du jugement."
+				}, {
+					ar: "إن لم تتفقا، اطلب التقدير. السقف القانوني: لا يتجاوز قيمة صداق المثل وقت صدور الحكم، لا قيمة صداقك القديم بالضرورة.",
+					fr: "À défaut d'accord, demandez la fixation. Le plafond est la dot de parité au jour du jugement, pas forcément votre ancienne dot."
+				}],
+				articleIds: ["fam-54", "fam-16"]
+			},
+			{
+				id: "deposit",
+				skeleton: true,
+				title: {
+					ar: "اكتب العريضة وأودعها",
+					fr: "Rédigez la requête et déposez-la"
+				},
+				where: {
+					ar: "أمانة ضبط قسم شؤون الأسرة، محكمة {wilaya}. اسأل الشباك أي قسم يستلم دعاوى الطلاق في هذه المحكمة قبل أن تقف في الصف الخطأ.",
+					fr: "Greffe de la section familiale, tribunal de {wilaya}. Demandez quel guichet reçoit les divorces dans ce tribunal."
+				},
+				actions: [
+					{
+						ar: "العريضة مكتوبة، ممضاة، مؤرخة، بنسخ بعدد الأطراف.",
+						fr: "Requête écrite, signée, datée, en autant de copies qu'il y a de parties."
+					},
+					{
+						ar: "اذكر المحكمة، هويتك وموطنك، هوية الطرف الآخر وموطنه، الوقائع، الوسائل (أرقام المواد)، والطلبات.",
+						fr: "Indiquez le tribunal, votre identité et domicile, ceux de l'autre partie, les faits, les moyens (numéros d'articles) et les demandes."
+					},
+					{
+						ar: "ادفع الرسم الذي يحدده أمين الضبط واحتفظ بالوصل. يُقيَّد رقم القضية وتاريخ أول جلسة على النسخ.",
+						fr: "Payez le droit indiqué par le greffe et gardez le reçu. Le numéro et la date d'audience sont portés sur les copies."
+					},
+					{
+						ar: "اطلب في العريضة نفسها، إن لزم، النفقة المؤقتة والحضانة والزيارة والسكن. ما لا يُطلب لا يُفترض.",
+						fr: "Demandez dans la même requête, s'il y a lieu, l'entretien provisoire, la garde, la visite et le logement. Ce qui n'est pas demandé n'est pas présumé."
+					}
+				],
+				bring: [
+					{
+						id: "d1",
+						label: {
+							ar: "العريضة بنسخها",
+							fr: "La requête et ses copies"
+						}
+					},
+					{
+						id: "d2",
+						label: {
+							ar: "المستندات المشار إليها في العريضة",
+							fr: "Les pièces citées dans la requête"
+						}
+					},
+					{
+						id: "d3",
+						label: {
+							ar: "مال الرسوم",
+							fr: "De quoi payer les frais"
+						}
+					}
+				],
+				articleIds: [
+					"cpca-13",
+					"cpca-14",
+					"cpca-15",
+					"fam-49"
+				],
+				caution: {
+					ar: "يمكنك المثول شخصياً أمام المحكمة في مادة الأسرة. المحامي ليس حاجزاً في هذه الخطوة، وهو مفيد إذا كانت الطلبات المالية أو الحضانة متنازعًا عليها.",
+					fr: "Vous pouvez comparaître en personne en matière familiale. L'avocat n'est pas un verrou à cette étape ; il devient utile si l'argent ou la garde est contesté."
+				}
+			},
+			{
+				id: "serve",
+				title: {
+					ar: "بلّغ الطرف الآخر رسمياً",
+					fr: "Faites notifier officiellement"
+				},
+				where: {
+					ar: "محضر قضائي بدائرة محكمة {wilaya}، وليس عون الاستقبال. خذ النسخ التي ختمها أمين الضبط.",
+					fr: "Un huissier de justice du ressort du tribunal de {wilaya}, pas l'agent d'accueil. Emportez les copies visées par le greffe."
+				},
+				actions: [
+					{
+						ar: "سلّمه النسخ وعنوان التبليغ. التبليغ الرسمي هو الذي يفتح الأجل ويُثبت علم الخصم.",
+						fr: "Remettez les copies et l'adresse. Seule la notification officielle ouvre les délais et prouve que l'autre partie est informée."
+					},
+					{
+						ar: "استعد عنواناً بديلاً إن رجع المحضر بغير تبليغ. آخر موطن معلوم يُذكر في العريضة إن غاب الموطن الحالي.",
+						fr: "Prévoyez une adresse de repli si l'exploit revient sans notification. Le dernier domicile connu se mentionne dans la requête."
+					},
+					{
+						ar: "احضر الجلسة ولو بلغك الصلح مبكراً. الغياب يغيّر وصف الحكم.",
+						fr: "Venez à l'audience même si une conciliation semble proche. L'absence change la nature du jugement."
+					}
+				],
+				articleIds: ["note-summons", "cpca-14"]
+			},
+			{
+				id: "hearing",
+				title: {
+					ar: "الصلح ثم الحكم",
+					fr: "Conciliation, puis jugement"
+				},
+				where: {
+					ar: "قاعة قسم شؤون الأسرة في التاريخ المكتوب على التكليف. الحضور شخصي: الصلح لا يوكَّل بالكامل.",
+					fr: "Salle de la section familiale, à la date écrite sur la citation. Présence personnelle : la conciliation ne se délègue pas entièrement."
+				},
+				actions: [
+					{
+						ar: "القاضي يجري محاولة الصلح ويحرر محضراً يوقعه مع كاتب الضبط والطرفين. المدة كلها لا تجاوز ثلاثة أشهر من تاريخ رفع الدعوى.",
+						fr: "Le juge tente la conciliation et dresse un procès-verbal signé avec le greffier et les parties. L'ensemble ne dépasse pas trois mois à compter de l'action."
+					},
+					{
+						ar: "إن وقعت الرجعة أثناء محاولة الصلح فلا تحتاج عقد زواج جديداً. بعد الحكم تحتاجانه.",
+						fr: "La reprise pendant la conciliation ne exige pas un nouvel acte. Après le jugement, oui."
+					},
+					{
+						ar: "إن لم يقع الصلح يصدر الحكم. اطلب نسخة بعد النطق، واقرأ المنطوق: الطلاق شيء، والمبالغ والحضانة شيء آخر.",
+						fr: "À défaut de conciliation, le jugement est rendu. Demandez une copie et lisez le dispositif : le divorce est une chose, les sommes et la garde en sont une autre."
+					}
+				],
+				articleIds: [
+					"fam-49",
+					"fam-50",
+					"fam-52",
+					"fam-57"
+				],
+				delay: {
+					ar: "سقف محاولة الصلح: ثلاثة أشهر من تاريخ رفع الدعوى. هذا سقف مساعي الصلح، وليس أجل طعن.",
+					fr: "Plafond de la conciliation : trois mois à compter de l'introduction. Ce n'est pas un délai de recours."
+				}
+			},
+			{
+				id: "after",
+				title: {
+					ar: "بعد الحكم: القيد، التنفيذ، والطعن الممكن",
+					fr: "Après le jugement : transcription, exécution, recours possible"
+				},
+				where: {
+					ar: "أمانة الضبط لنسخة الحكم. بلدية قيد الزواج للتأكد من التسجيل. المحضر القضائي إن كان في المنطوق مبلغ أو سكن لم يُنفَّذ رضائياً.",
+					fr: "Le greffe pour la copie. La commune de transcription du mariage pour vérifier l'inscription. L'huissier si une somme ou un logement du dispositif n'est pas exécuté volontairement."
+				},
+				actions: [
+					{
+						ar: "النيابة هي المكلفة بتسجيل حكم الطلاق في الحالة المدنية. تابع البلدية بنسخة الحكم إن تأخر القيد، لأن الوثائق اللاحقة تتوقف عليه.",
+						fr: "Le parquet fait transcrire le jugement à l'état civil. Suivez à la commune avec une copie si l'inscription tarde : les actes suivants en dépendent."
+					},
+					{
+						ar: "الجوانب المادية تُبلَّغ رسمياً إن أردت تنفيذها أو إن أردت أن يسري أجل استئنافها ضدك أو لك.",
+						fr: "Faites notifier officiellement les aspects pécuniaires si vous voulez les exécuter, ou si le délai d'appel doit courir."
+					},
+					{
+						ar: "لا تستأنف «الطلاق» نفسه. استأنف المبلغ أو الحضانة إن كان ذلك ما نطق به الحكم وما يسمح به النص.",
+						fr: "N'appelez pas « le divorce » lui-même. Appelez la somme ou la garde, si c'est ce que le dispositif a jugé et ce que le texte permet."
+					}
+				],
+				articleIds: [
+					"fam-49",
+					"fam-57",
+					"fam-72",
+					"cpca-336",
+					"cpca-404"
+				],
+				delay: appealMoney
+			}
+		]
+	},
+	{
+		id: "custody",
+		group: "family",
+		title: {
+			ar: "الحضانة والنفقة والزيارة",
+			fr: "Garde, entretien, visite"
+		},
+		lead: {
+			ar: "يمكن طلبها داخل دعوى الطلاق أو بدعوى مستقلة. الترتيب في القانون يبدأ بالأم ثم الأب، ومصلحة المحضون حاضرة في كل درجة. الزيارة تُحكم مع إسناد الحضانة.",
+			fr: "Elles se demandent dans le divorce ou par une action distincte. L'ordre légal commence par la mère puis le père, toujours selon l'intérêt de l'enfant. La visite est jugée avec la garde."
+		},
+		forum: {
+			ar: "قسم شؤون الأسرة بمحكمة {wilaya}.",
+			fr: "Section de la famille du tribunal de {wilaya}."
+		},
+		articleIds: [
+			"fam-64",
+			"fam-72",
+			"fam-78"
+		],
+		steps: [
+			{
+				id: "ask",
+				skeleton: true,
+				title: {
+					ar: "سمِّ الطلبات الثلاثة منفصلة",
+					fr: "Nommez les trois demandes séparément"
+				},
+				where: {
+					ar: "أمانة ضبط قسم شؤون الأسرة، محكمة {wilaya}.",
+					fr: "Greffe de la section familiale, tribunal de {wilaya}."
+				},
+				actions: [
+					{
+						ar: "الحضانة، الزيارة، النفقة، وسكن ممارسة الحضانة أربعة طلبات. اكتب كل واحد وما تطلبه فيه.",
+						fr: "Garde, visite, entretien et logement de la garde sont quatre demandes. Écrivez chacune."
+					},
+					{
+						ar: "النفقة تشمل الغذاء والكسوة والعلاج والسكن أو أجرته وما جرى به العرف. اطلب مبلغاً واذكر دخل الطرف إن كنت تعرفه.",
+						fr: "L'entretien couvre nourriture, vêtement, soins, logement ou loyer, et l'usage. Demandez un montant et indiquez le revenu si vous le connaissez."
+					},
+					{
+						ar: "إن كانت الدعوى مستقلة عن طلاق جارٍ، أودع عريضة بالمادة 14 و15 وبلّغها بالمحضر القضائي.",
+						fr: "Si l'action est distincte d'un divorce en cours, déposez une requête selon les articles 14 et 15 et faites-la notifier par huissier."
+					}
+				],
+				bring: [
+					{
+						id: "c1",
+						label: {
+							ar: "عقود الميلاد",
+							fr: "Actes de naissance"
+						}
+					},
+					{
+						id: "c2",
+						label: {
+							ar: "ما يُثبت الدخل أو حاجات الولد",
+							fr: "Preuve du revenu ou des besoins de l'enfant"
+						}
+					},
+					{
+						id: "c3",
+						label: {
+							ar: "ما يُثبت مكان ممارسة الحضانة",
+							fr: "Preuve du lieu où la garde s'exerce"
+						}
+					}
+				],
+				articleIds: [
+					"fam-62",
+					"fam-64",
+					"fam-74",
+					"fam-75",
+					"fam-78",
+					"cpca-15"
+				]
+			},
+			{
+				id: "rules",
+				title: {
+					ar: "ما يطبّقه القاضي على الحضانة",
+					fr: "Ce que le juge applique à la garde"
+				},
+				where: {
+					ar: "في الجلسة. لا تغيّر سكن الولد قبل الحكم ثم تطلب من المحكمة أن تُجاز ما وقع.",
+					fr: "À l'audience. Ne déplacez pas l'enfant avant le jugement pour demander ensuite une validation."
+				},
+				actions: [
+					{
+						ar: "الترتيب: الأم، ثم الأب، ثم الجدة لأم، ثم الجدة لأب، ثم الخالة، ثم العمة، ثم الأقرب درجة. المصلحة يمكن أن تعدّل هذا الترتيب، وهي ليست شعاراً يُلقى بلا واقعة.",
+						fr: "L'ordre : mère, père, grand-mère maternelle, grand-mère paternelle, tante maternelle, tante paternelle, puis le plus proche. L'intérêt peut modifier cet ordre ; ce n'est pas un slogan sans faits."
+					},
+					{
+						ar: "مع إسناد الحضانة يجب أن يُحكم بالزيارة. اقترح أياماً دقيقة وقابلة للتنفيذ.",
+						fr: "Avec la garde, la visite doit être jugée. Proposez des jours précis et exécutables."
+					},
+					{
+						ar: "عمل الأم ليس سبباً لإسقاط الحضانة. زواج الحاضنة بغير قريب محرم سبب سقوط ما لم يضر الإسقاط بالمحضون.",
+						fr: "Le travail de la mère n'est pas une cause de déchéance. Son mariage avec un non-mahram l'est, sauf si la déchéance nuit à l'enfant."
+					}
+				],
+				articleIds: [
+					"fam-64",
+					"fam-65",
+					"fam-66",
+					"fam-67"
+				],
+				caution: {
+					ar: "حضانة الذكر تنتهي بعشر سنوات، وللقاضي مدها إلى ست عشرة إن كانت الحاضنة أماً لم تتزوج ثانية، مع مصلحة المحضون. نص الأنثى يقول «سن الزواج» ولا يضع الرقم 19 في هذه المادة. لا تُنهِ الحضانة من تلقاء نفسك بهذا الرقم.",
+					fr: "La garde du garçon finit à dix ans, prolongeable à seize si la gardienne est la mère non remariée, selon l'intérêt de l'enfant. Pour la fille, le texte dit « l'âge du mariage » sans écrire le chiffre 19 dans cet article. N'y mettez pas fin de vous-même sur ce chiffre."
+				}
+			},
+			{
+				id: "house",
+				title: {
+					ar: "السكن أو بدل الإيجار",
+					fr: "Logement ou indemnité de loyer"
+				},
+				where: {
+					ar: "في الطلبات، ثم عند المحضر القضائي إن لم يُنفَّذ الحكم.",
+					fr: "Dans les demandes, puis chez l'huissier si le jugement n'est pas exécuté."
+				},
+				actions: [{
+					ar: "على الأب توفير سكن ملائم لممارسة الحضانة أو دفع بدل الإيجار إن تعذر السكن.",
+					fr: "Le père fournit un logement convenable pour la garde, ou paie le loyer si le logement est impossible."
+				}, {
+					ar: "تبقى الحاضنة في بيت الزوجية إلى أن يُنفَّذ الحكم المتعلق بالسكن. لا يُفرَغ البيت بقرار فردي قبل ذلك.",
+					fr: "La gardienne reste dans le domicile conjugal jusqu'à l'exécution du jugement sur le logement. On ne vide pas le logement par décision unilatérale avant cela."
+				}],
+				articleIds: ["fam-72"]
+			},
+			{
+				id: "appeal",
+				title: {
+					ar: "الحضانة تُستأنف",
+					fr: "La garde est appelable"
+				},
+				where: {
+					ar: "أمانة ضبط المجلس القضائي لـ {wilaya}، بعد تبليغ الحكم. خذ نسخة الحكم ومحضر التبليغ.",
+					fr: "Greffe de la cour de {wilaya}, après notification du jugement. Emportez la copie et le procès-verbal de notification."
+				},
+				actions: [{
+					ar: "خلاف الطلاق نفسه، حكم الحضانة قابل للاستئناف.",
+					fr: "Contrairement au divorce lui-même, le jugement sur la garde est susceptible d'appel."
+				}, {
+					ar: "احسب الأجل من التبليغ الرسمي لا من يوم الجلسة التي سمعتَ فيها النطق.",
+					fr: "Comptez le délai depuis la notification officielle, pas depuis le jour où vous avez entendu le prononcé."
+				}],
+				articleIds: [
+					"fam-57",
+					"cpca-336",
+					"cpca-404"
+				],
+				delay: appealMoney
+			}
+		]
+	},
+	{
+		id: "succession",
+		group: "family",
+		title: {
+			ar: "التركة والفريضة",
+			fr: "Succession et dévolution"
+		},
+		lead: {
+			ar: "التركة تُفتح بالموت. الورثة الأحياء وقتها، بلا مانع، هم من يرث بالقرابة أو الزوجية. القسمة الهادئة عند الموثق. النزاع أو القاصر أو المانع عند المحكمة.",
+			fr: "La succession s'ouvre par la mort. Héritent les vivants à cet instant, sans empêchement, par parenté ou mariage. Le partage paisible est chez le notaire. Le litige, le mineur ou l'empêchement vont au tribunal."
+		},
+		forum: {
+			ar: "الموثق أولاً في {wilaya}. قسم شؤون الأسرة بمحكمة {wilaya} إن وُجد نزاع أو مانع أو قاصر لا تُمس حصته.",
+			fr: "Le notaire d'abord, à {wilaya}. La section familiale du tribunal de {wilaya} s'il y a litige, empêchement, ou part d'un mineur à protéger."
+		},
+		articleIds: [
+			"fam-126",
+			"fam-127",
+			"fam-144"
+		],
+		steps: [
+			{
+				id: "death",
+				title: {
+					ar: "أثبت الوفاة وجمع الورثة",
+					fr: "Établissez le décès et les héritiers"
+				},
+				where: {
+					ar: "ضابط الحالة المدنية في بلدية مكان الوفاة، ثم البلدية التي تعرف الأسرة.",
+					fr: "Officier de l'état civil de la commune du décès, puis celle qui connaît la famille."
+				},
+				actions: [
+					{
+						ar: "استخرج شهادة الوفاة. التركة لا تُفتح بخبر عائلي.",
+						fr: "Retirez le certificat de décès. La succession ne s'ouvre pas sur une nouvelle familiale."
+					},
+					{
+						ar: "استخرج شهادة عائلية للحالة المدنية تبيّن الزوج والأولاد.",
+						fr: "Demandez un certificat familial d'état civil indiquant le conjoint et les enfants."
+					},
+					{
+						ar: "اجمع بطاقات الورثة وعقود ميلادهم. الحمل وقت الوفاة صاحب حق إن وُلد حياً، فلا تُقفل القسمة دونه.",
+						fr: "Réunissez les pièces des héritiers. L'enfant conçu au décès a une vocation s'il naît vivant : ne clôturez pas sans lui."
+					}
+				],
+				bring: [
+					{
+						id: "s1",
+						label: {
+							ar: "شهادة الوفاة",
+							fr: "Certificat de décès"
+						}
+					},
+					{
+						id: "s2",
+						label: {
+							ar: "الشهادة العائلية",
+							fr: "Certificat familial"
+						}
+					},
+					{
+						id: "s3",
+						label: {
+							ar: "بطاقات الورثة",
+							fr: "Pièces des héritiers"
+						}
+					}
+				],
+				articleIds: [
+					"fam-127",
+					"fam-128",
+					"fam-130"
+				]
+			},
+			{
+				id: "notary",
+				title: {
+					ar: "الفريضة عند الموثق",
+					fr: "La dévolution chez le notaire"
+				},
+				where: {
+					ar: "مكتب موثق في {wilaya}. الموثق يحرر الفريضة. هذا التطبيق لا يحسب الأنصبة مكانه.",
+					fr: "Une étude notariale à {wilaya}. Le notaire dresse la dévolution. Cette application ne calcule pas les parts à sa place."
+				},
+				actions: [
+					{
+						ar: "سلّمه شهادات الوفاة والعائلة وبطاقات الورثة، وعقود الملكية أو الدفاتر العقارية وكشوف الحسابات إن وُجدت.",
+						fr: "Remettez les certificats, les pièces, les titres de propriété ou livrets fonciers, et les relevés de comptes s'il y en a."
+					},
+					{
+						ar: "أصحاب الفروض في المواد 144 إلى 146 نقطة بداية فقط. العاصب، والحجب، والرد، والعول، وبيت المال لا تُختصر في جدول.",
+						fr: "Les quotes-parts des articles 144 à 146 ne sont qu'un départ. L'agnation, l'exclusion, le retour, l'awl et le beyt el-mal ne tiennent pas dans un tableau."
+					},
+					{
+						ar: "القسمة الودية يوقعها الورثة الراشدون عند الموثق. العقار يُشهر بالمحافظة العقارية. الحساب البنكي يُفك بالفريضة وشهادة الوفاة وفق إجراءات البنك.",
+						fr: "Le partage amiable est signé chez le notaire par les héritiers majeurs. L'immeuble se publie à la conservation foncière. Le compte bancaire se débloque avec la dévolution et le décès, selon la banque."
+					}
+				],
+				articleIds: [
+					"fam-126",
+					"fam-144",
+					"fam-145",
+					"fam-146"
+				],
+				caution: {
+					ar: "لا تتنازل عن حصة قاصر ولا توقع قسمة تمسها. الولي أو الموثق يطلب إذن القاضي حين يشترطه القانون. التنازل الشفهي لا يسقط النصيب.",
+					fr: "Ne renoncez pas à la part d'un mineur et ne signez pas un partage qui y touche. Le tuteur ou le notaire demande l'autorisation du juge lorsque la loi l'exige. Une renonciation verbale ne fait pas tomber la part."
+				}
+			},
+			{
+				id: "block",
+				title: {
+					ar: "إذا وُجد مانع أو نزاع",
+					fr: "S'il y a un empêchement ou un litige"
+				},
+				where: {
+					ar: "قسم شؤون الأسرة بمحكمة {wilaya}، بعريضة. لا توزعوا المال «مؤقتاً» بانتظار الحكم.",
+					fr: "Section familiale du tribunal de {wilaya}, par requête. Ne répartissez pas l'argent « en attendant » le jugement."
+				},
+				actions: [
+					{
+						ar: "القاتل عمداً وعدواناً، وشاهد الزور الذي أدت شهادته إلى إعدام نُفّذ، والعالم بالقتل الذي سكت عن السلطات: هؤلاء ممنوعون. الممنوع لا يحجب غيره.",
+						fr: "L'homicide volontaire injuste, le faux témoin dont la déposition a fait exécuter une peine de mort, et celui qui a tu le projet de meurtre : ils sont exclus. L'exclu n'exclut pas les autres."
+					},
+					{
+						ar: "القتل الخطأ لا يمنع من المال، ويمنع من الدية أو التعويض.",
+						fr: "L'homicide par imprudence n'exclut pas des biens ; il exclut du prix du sang ou de l'indemnité."
+					},
+					{
+						ar: "إن اختلفتم على صفة وارث أو على مال داخل التركة، ارفعوا الدعوى قبل أي بيع.",
+						fr: "Si vous divergez sur la qualité d'un héritier ou sur un bien dépendant de la succession, agissez avant toute vente."
+					}
+				],
+				articleIds: [
+					"fam-135",
+					"cpca-14",
+					"cpca-15"
+				]
+			}
+		]
+	},
+	{
+		id: "work",
+		group: "work",
+		title: {
+			ar: "نزاع عمل: أجر أو تسريح",
+			fr: "Conflit du travail : salaire ou licenciement"
+		},
+		lead: {
+			ar: "لا دعوى قبل محاولة الصلح أمام مكتب المصالحة. بعد محضر عدم الصلح، أمامك ستة أشهر لرفع الدعوى أمام القسم الاجتماعي وإلا سقط الحق.",
+			fr: "Pas d'action avant la tentative de conciliation. Après le procès-verbal de non-conciliation, vous avez six mois pour saisir la section sociale, sinon le droit d'agir tombe."
+		},
+		forum: {
+			ar: "مفتشية العمل ثم مكتب المصالحة في {wilaya}، وبعد المحضر: القسم الاجتماعي بمحكمة {wilaya}.",
+			fr: "Inspection du travail puis bureau de conciliation à {wilaya}, ensuite la section sociale du tribunal de {wilaya}."
+		},
+		articleIds: [
+			"work-19",
+			"cpca-504",
+			"work-37"
+		],
+		steps: [
+			{
+				id: "papers",
+				title: {
+					ar: "اجمع علاقة العمل قبل الشكوى",
+					fr: "Rassemblez le lien de travail avant la plainte"
+				},
+				where: {
+					ar: "من ملفك ومن المستخدم: العقد، الأجور، الانتساب، ورسالة التسريح إن وُجدت.",
+					fr: "Dans votre dossier et chez l'employeur : contrat, paies, affiliation, lettre de licenciement s'il y en a une."
+				},
+				actions: [
+					{
+						ar: "انسخ عقد العمل، آخر كشوف أجر، وبطاقة الانتساب للضمان الاجتماعي.",
+						fr: "Copiez le contrat, les derniers bulletins de paie et l'attestation d'affiliation à la sécurité sociale."
+					},
+					{
+						ar: "احتفظ بأصل رسالة التسريح أو الإعذار وظرفها. لا ترسل الأصل لأحد.",
+						fr: "Gardez l'original de la lettre de licenciement ou de la mise en demeure, et son enveloppe. N'envoyez l'original à personne."
+					},
+					{
+						ar: "اكتب المطالب بالدينار: أجور غير مدفوعة، عطلة، تعويض، شهادة عمل. مكتب المصالحة يقيّد ما تطلبه.",
+						fr: "Écrivez les demandes en dinars : salaires impayés, congé, indemnité, certificat de travail. Le bureau enregistre ce que vous demandez."
+					}
+				],
+				bring: [
+					{
+						id: "w1",
+						label: {
+							ar: "عقد العمل",
+							fr: "Contrat de travail"
+						}
+					},
+					{
+						id: "w2",
+						label: {
+							ar: "كشوف الأجر",
+							fr: "Bulletins de paie"
+						}
+					},
+					{
+						id: "w3",
+						label: {
+							ar: "ما يُثبت التسريح أو الامتناع",
+							fr: "Preuve du licenciement ou du refus"
+						}
+					}
+				],
+				articleIds: ["work-19"]
+			},
+			{
+				id: "bureau",
+				title: {
+					ar: "مكتب المصالحة، لا المحكمة بعد",
+					fr: "Le bureau de conciliation, pas encore le tribunal"
+				},
+				where: {
+					ar: "مفتشية العمل في {wilaya}. المفتش يخطر مكتب المصالحة. المحضر يصدر عن المكتب لا عن المفتش وحده.",
+					fr: "Inspection du travail de {wilaya}. L'inspecteur saisit le bureau de conciliation. Le procès-verbal émane du bureau, pas de l'inspecteur seul."
+				},
+				actions: [
+					{
+						ar: "قدّم الإخطار بوجود خلاف فردي. كل خلاف فردي يجب أن يمر بمحاولة صلح قبل أي دعوى.",
+						fr: "Déposez l'avis du différend individuel. Tout différend individuel doit passer par une tentative de conciliation avant toute action."
+					},
+					{
+						ar: "احضر الاجتماع. إن غاب المستخدم أو ممثله في اجتماعين متتاليين رغم الاستدعاء، يُحرر محضر عدم مصالحة.",
+						fr: "Assistez à la réunion. Si l'employeur ou son représentant manque deux réunions successives malgré convocation, un procès-verbal de non-conciliation est dressé."
+					},
+					{
+						ar: "إن حضرتما ولم تتفقا، أو اتفقتما على جزء فقط، خذ نسختك من المحضر في الاجتماع نفسه.",
+						fr: "Si vous êtes présents sans accord, ou d'accord sur une partie seulement, prenez votre copie du procès-verbal à la réunion même."
+					}
+				],
+				articleIds: ["work-19", "work-30"],
+				caution: {
+					ar: "محضر الصلح على ما اتفقتم عليه غير محضر عدم الصلح على الباقي. اقرأ العنوان قبل أن تغادر المكتب.",
+					fr: "Le procès-verbal de conciliation sur ce qui est accordé n'est pas le procès-verbal de non-conciliation sur le reste. Lisez le titre avant de quitter."
+				}
+			},
+			{
+				id: "court",
+				skeleton: true,
+				title: {
+					ar: "القسم الاجتماعي خلال ستة أشهر",
+					fr: "La section sociale dans les six mois"
+				},
+				where: {
+					ar: "أمانة ضبط القسم الاجتماعي بمحكمة {wilaya}. أرفق نسخة محضر عدم المصالحة، وإلا فالعريضة ناقصة في هذه المادة.",
+					fr: "Greffe de la section sociale du tribunal de {wilaya}. Joignez le procès-verbal de non-conciliation, sinon la requête est incomplète dans cette matière."
+				},
+				actions: [
+					{
+						ar: "ارفع الدعوى خلال ستة أشهر من تاريخ تسليم المحضر. هذا أجل سقوط، لا أجل راحة. احتفظ بما يُثبت تاريخ التسليم.",
+						fr: "Introduisez l'action dans les six mois de la remise du procès-verbal. C'est une déchéance, pas un délai de confort. Gardez la preuve de la date de remise."
+					},
+					{
+						ar: "العريضة تخضع للبيانات العامة: المحكمة، الأطراف، الوقائع، الطلبات، الوسائل، والمستندات. أرفق المحضر.",
+						fr: "La requête suit les mentions générales : tribunal, parties, faits, demandes, moyens, pièces. Joignez le procès-verbal."
+					},
+					{
+						ar: "أول جلسة في القسم الاجتماعي لا تُقاس على أجل العشرين يوماً الخاص بالمواد العادية. اتبع التاريخ الذي يكتبه أمين الضبط.",
+						fr: "La première audience sociale ne se mesure pas au délai de vingt jours des matières ordinaires. Suivez la date écrite par le greffe."
+					}
+				],
+				bring: [
+					{
+						id: "w4",
+						label: {
+							ar: "محضر عدم المصالحة",
+							fr: "Procès-verbal de non-conciliation"
+						}
+					},
+					{
+						id: "w5",
+						label: {
+							ar: "العريضة بنسخها",
+							fr: "Requête et copies"
+						}
+					},
+					{
+						id: "w6",
+						label: {
+							ar: "ملف العمل",
+							fr: "Dossier de travail"
+						}
+					}
+				],
+				articleIds: [
+					"cpca-504",
+					"work-37",
+					"cpca-15",
+					"cpca-500"
+				],
+				delay: {
+					ar: "ستة أشهر من تسليم محضر عدم الصلح، تحت طائلة سقوط الحق في رفع الدعوى. هذا غير أجل تقادم الأجر نفسه: لا تنتظر لتقارن بينهما.",
+					fr: "Six mois à compter de la remise du procès-verbal de non-conciliation, sous peine de déchéance du droit d'agir. Ce n'est pas la prescription du salaire : ne tardez pas pour les comparer."
+				}
+			},
+			{
+				id: "after",
+				title: {
+					ar: "الحكم وما بعده",
+					fr: "Le jugement et après"
+				},
+				where: {
+					ar: "أمانة الضبط للنسخة. المحضر القضائي للتنفيذ إن لم يدفع المستخدم. المجلس القضائي لـ {wilaya} إن استأنفت.",
+					fr: "Le greffe pour la copie. L'huissier pour l'exécution si l'employeur ne paie pas. La cour de {wilaya} si vous appelez."
+				},
+				actions: [
+					{
+						ar: "اقرأ المنطوق: المبالغ، المدة، والشهادة. نفّذ بالنسخة التنفيذية عبر المحضر القضائي.",
+						fr: "Lisez le dispositif : sommes, période, certificat. Exécutez avec la grosse, par huissier."
+					},
+					{
+						ar: "استئناف حكم القسم الاجتماعي ممكن في الأصل، بخلاف طلاق الحالة. الأجل يُقرأ من التبليغ وفق المادة 336.",
+						fr: "L'appel d'un jugement social est en principe ouvert, contrairement au divorce d'état. Le délai se lit sur la notification, selon l'article 336."
+					},
+					{
+						ar: "اسأل أمين الضبط إن كان الحكم مشمولاً بالنفاذ المعجل قبل أن تفترض أنه كذلك.",
+						fr: "Demandez au greffe si le jugement est exécutoire par provision avant de le supposer."
+					}
+				],
+				articleIds: ["cpca-336", "cpca-404"]
+			}
+		]
+	},
+	{
+		id: "debt",
+		group: "civil",
+		title: {
+			ar: "دين أو عقد لم يُوفَّ",
+			fr: "Créance ou contrat inexécuté"
+		},
+		lead: {
+			ar: "المسار العادي: إعذار مكتوب، ثم عريضة أمام القسم المدني لمحكمة موطن المدعى عليه، ثم تبليغ رسمي، ثم حكم، ثم تنفيذ. الصفة والمصلحة شرط قبول.",
+			fr: "Le chemin ordinaire : une mise en demeure écrite, une requête devant la section civile du domicile du défendeur, une notification officielle, un jugement, puis l'exécution. Qualité et intérêt sont requis."
+		},
+		forum: {
+			ar: "القسم المدني بمحكمة موطن المدعى عليه. إن كان يقطن {wilaya} فالمحكمة هنا، وإلا فمحكمة ولايته هو لا ولايتك.",
+			fr: "Section civile du tribunal du domicile du défendeur. S'il habite {wilaya}, c'est ici. Sinon, c'est son tribunal, pas le vôtre."
+		},
+		articleIds: [
+			"cpca-13",
+			"cpca-15",
+			"civ-308"
+		],
+		steps: [
+			{
+				id: "demand",
+				title: {
+					ar: "أعذره واحفظ الدليل",
+					fr: "Mettez-le en demeure et gardez la preuve"
+				},
+				where: {
+					ar: "رسالة مضمونة أو محضر، قبل العريضة. ليس شرطاً شكلياً في كل دين، وهو يقوي الملف ويقطع عذر الجهل.",
+					fr: "Lettre recommandée ou exploit, avant la requête. Ce n'est pas une formalité dans toute créance ; cela renforce le dossier."
+				},
+				actions: [
+					{
+						ar: "اذكر المبلغ، سببه (عقد، قرض، فاتورة)، والأجل الذي تطلبه للوفاء.",
+						fr: "Indiquez la somme, sa cause (contrat, prêt, facture) et le délai de paiement que vous exigez."
+					},
+					{
+						ar: "احتفظ بالوصل. المراسلة الشفهية لا تُرفق بالعريضة.",
+						fr: "Gardez l'accusé. Une relance orale ne se joint pas à la requête."
+					},
+					{
+						ar: "التقادم العام خمس عشرة سنة، لكن كثيراً من الديون لها أجل أقصر بنص خاص. لا تبنِ على الخمس عشرة إن كان الدين أجراً أو شيكاً أو ضريبة.",
+						fr: "La prescription générale est de quinze ans, mais beaucoup de créances ont un délai plus court. Ne comptez pas sur les quinze ans pour un salaire, un chèque ou un impôt."
+					}
+				],
+				articleIds: ["civ-308"]
+			},
+			{
+				id: "sue",
+				skeleton: true,
+				title: {
+					ar: "العريضة في القسم المدني",
+					fr: "La requête en section civile"
+				},
+				where: {
+					ar: "أمانة ضبط المحكمة المختصة إقليمياً بموطن المدعى عليه. إن كان في {wilaya} فابدأ من أمانة هذه المحكمة واسأل عن القسم المدني.",
+					fr: "Greffe du tribunal du domicile du défendeur. S'il est à {wilaya}, commencez à ce greffe et demandez la section civile."
+				},
+				actions: [
+					{
+						ar: "تحقق من صفتك: أنت الدائن أو من ينوب عنه بنيابة مكتوبة. المصلحة قائمة.",
+						fr: "Vérifiez votre qualité : vous êtes le créancier, ou son mandataire par écrit. L'intérêt est né."
+					},
+					{
+						ar: "العريضة تتضمن البيانات الستة للمادة 15، بنسخ بعدد الأطراف، ممضاة ومؤرخة.",
+						fr: "La requête contient les six mentions de l'article 15, en autant de copies que de parties, signée et datée."
+					},
+					{
+						ar: "أرفق العقد والفواتير والإعذار. أمين الضبط يقيّد الرقم والجلسة. بلّغ بالمحضر القضائي.",
+						fr: "Joignez le contrat, les factures et la mise en demeure. Le greffe inscrit le numéro et l'audience. Faites notifier par huissier."
+					},
+					{
+						ar: "بين التكليف وأول جلسة، في المادة العادية، عشرون يوماً على الأقل ما لم يوجد نص آخر.",
+						fr: "Entre la citation et la première audience, en matière ordinaire, vingt jours au moins sauf texte contraire."
+					}
+				],
+				bring: [
+					{
+						id: "b1",
+						label: {
+							ar: "سند الدين",
+							fr: "Titre de la créance"
+						}
+					},
+					{
+						id: "b2",
+						label: {
+							ar: "الإعذار ووصله",
+							fr: "Mise en demeure et accusé"
+						}
+					},
+					{
+						id: "b3",
+						label: {
+							ar: "ما يُثبت عنوان الخصم",
+							fr: "Preuve de l'adresse adverse"
+						}
+					}
+				],
+				articleIds: [
+					"cpca-13",
+					"cpca-14",
+					"cpca-15",
+					"note-summons"
+				]
+			},
+			{
+				id: "end",
+				title: {
+					ar: "الحكم والتنفيذ والطعن",
+					fr: "Jugement, exécution, recours"
+				},
+				where: {
+					ar: "أمانة الضبط للنسخة التنفيذية. المحضر القضائي للتنفيذ. المجلس للاستئناف ضمن الأجل.",
+					fr: "Le greffe pour la grosse. L'huissier pour l'exécution. La cour pour l'appel dans le délai."
+				},
+				actions: [
+					{
+						ar: "التبليغ الرسمي للحكم هو مبدأ أجل الاستئناف: شهر إن كان إلى الشخص ذاته، شهران إن كان في الموطن الحقيقي أو المختار.",
+						fr: "La notification officielle ouvre l'appel : un mois à personne, deux mois au domicile réel ou élu."
+					},
+					{
+						ar: "الحكم الغيابي: أجل الاستئناف لا يسري إلا بعد انقضاء أجل المعارضة. اسأل أمين الضبط عن أجل المعارضة المكتوب في التبليغ ولا تفترض رقماً.",
+						fr: "Jugement par défaut : l'appel ne court qu'après le délai d'opposition. Demandez au greffe le délai écrit sur l'exploit, ne supposez pas un chiffre."
+					},
+					{
+						ar: "المقيم خارج الوطن: شهران إضافيان على آجال الطعن هذه.",
+						fr: "Résidence à l'étranger : deux mois de plus sur ces délais de recours."
+					}
+				],
+				articleIds: ["cpca-336", "cpca-404"],
+				delay: {
+					ar: "احسب من اليوم الموالي للتبليغ. إن وقع آخر يوم في عطلة امتد الأجل إلى أول يوم عمل، وفق قواعد حساب المواعيد في القانون.",
+					fr: "Comptez à partir du lendemain de la notification. Si le dernier jour est férié, le délai court jusqu'au premier jour ouvrable, selon les règles de computation du code."
+				}
+			}
+		]
+	},
+	{
+		id: "eviction",
+		group: "housing",
+		title: {
+			ar: "إخلاء سكن",
+			fr: "Expulsion d'un logement"
+		},
+		lead: {
+			ar: "لا أحد يُخرج أحداً بالمفتاح أو بقطع الماء. الإخلاء يكون بحكم ثم بتنفيذ المحضر القضائي. المسار يختلف إن كنت المؤجر أو الساكن.",
+			fr: "Personne ne met personne dehors par la clé ou en coupant l'eau. L'expulsion se fait par jugement, puis par l'huissier. Le chemin change selon que vous êtes bailleur ou occupant."
+		},
+		forum: {
+			ar: "القسم المدني أو العقاري بمحكمة {wilaya}، حسب تنظيم هذه المحكمة. الشباك يوجهك. لا تبدأ بالشرطة لإخلاء مدني.",
+			fr: "Section civile ou immobilière du tribunal de {wilaya}, selon l'organisation de ce tribunal. Le guichet vous oriente. Ne commencez pas par la police pour une expulsion civile."
+		},
+		articleIds: ["cpca-14", "cpca-15"],
+		choice: {
+			question: {
+				ar: "ما موقعك من السكن؟",
+				fr: "Quelle est votre place dans le logement ?"
+			},
+			options: [{
+				id: "owner",
+				label: {
+					ar: "أريد استرجاع السكن",
+					fr: "Je veux reprendre le logement"
+				},
+				detail: {
+					ar: "دعوى ثم حكم ثم محضر. غيّر القفل قبل ذلك تُعرّض نفسك لشكوى.",
+					fr: "Action, jugement, huissier. Changer la serrure avant cela vous expose à une plainte."
+				}
+			}, {
+				id: "tenant",
+				label: {
+					ar: "أُخرجت أو هُددت بالإخراج",
+					fr: "Je suis mis dehors ou menacé de l'être"
+				},
+				detail: {
+					ar: "الإخراج بلا حكم ليس تنفيذاً. وثّق الحال واطلب الحماية من المحكمة، والشكوى إن وقع اعتداء.",
+					fr: "Une expulsion sans jugement n'est pas une exécution. Constatez les faits et saisissez le tribunal ; portez plainte s'il y a voie de fait."
+				}
+			}]
+		},
+		steps: [
+			{
+				id: "owner-1",
+				when: ["owner"],
+				title: {
+					ar: "لا تُنفذ بنفسك",
+					fr: "N'exécutez pas vous-même"
+				},
+				where: {
+					ar: "ابقَ خارج الباب. التصوير للمحضر لاحق، لا للمواجهة.",
+					fr: "Restez hors du seuil. Les photos sont pour le dossier, pas pour l'affrontement."
+				},
+				actions: [
+					{
+						ar: "لا تبدّل القفل، ولا تقطع الكهرباء أو الماء، ولا تُخرج الأثاث. هذا ليس إجراءً قانونياً.",
+						fr: "Ne changez pas la serrure, ne coupez pas l'électricité ou l'eau, ne sortez pas les meubles. Ce n'est pas une procédure."
+					},
+					{
+						ar: "اجمع عقد الإيجار، الإنذارات، وما يُثبت عدم دفع البدل إن كان هذا سبب الدعوى.",
+						fr: "Rassemblez le bail, les mises en demeure, et la preuve du défaut de loyer si c'est le motif."
+					},
+					{
+						ar: "راجع مدة العقد وطريقة إنهائه المكتوبة فيه قبل أن تكتب العريضة. الشرط التعاقدي لا يلغي حاجة الحكم إلى التنفيذ الجبري.",
+						fr: "Relisez la durée et le mode de résiliation écrits dans le bail avant la requête. Une clause ne dispense pas du jugement pour l'exécution forcée."
+					}
+				],
+				articleIds: ["cpca-13"],
+				caution: {
+					ar: "إيجار السكن تحكمه شروط العقد وأحكام الإيجار في القانون المدني. هذا الدليل لا يخترع أجلاً موحداً للإخطار لأن النص يختلف حسب العقد ونوع المحل.",
+					fr: "La location d'habitation dépend du contrat et du bail dans le code civil. Ce guide n'invente pas un délai unique de préavis : le texte change selon le contrat et le local."
+				}
+			},
+			{
+				id: "owner-2",
+				when: ["owner"],
+				skeleton: true,
+				title: {
+					ar: "دعوى ثم تنفيذ",
+					fr: "Action, puis exécution"
+				},
+				where: {
+					ar: "أمانة ضبط محكمة {wilaya}، القسم الذي يحدده الشباك، ثم المحضر القضائي بعد النسخة التنفيذية.",
+					fr: "Greffe du tribunal de {wilaya}, la section indiquée au guichet, puis l'huissier après la grosse."
+				},
+				actions: [
+					{
+						ar: "العريضة تطلب الإخلاء والبدل غير المدفوع إن وُجد، مع بيانات المادة 15.",
+						fr: "La requête demande l'expulsion et les loyers impayés s'il y en a, avec les mentions de l'article 15."
+					},
+					{
+						ar: "بلّغ الساكن رسمياً. أجل العشرين يوماً قبل أول جلسة هو القاعدة العامة.",
+						fr: "Notifiez l'occupant officiellement. Le délai de vingt jours avant la première audience est la règle générale."
+					},
+					{
+						ar: "بعد الحكم النهائي أو المشمول بالنفاذ، النسخة التنفيذية تُسلَّم للمحضر. هو من يُنفذ، لا أنت.",
+						fr: "Après un jugement définitif ou exécutoire, la grosse est remise à l'huissier. C'est lui qui exécute, pas vous."
+					}
+				],
+				articleIds: [
+					"cpca-14",
+					"cpca-15",
+					"note-summons",
+					"cpca-336"
+				]
+			},
+			{
+				id: "tenant-1",
+				when: ["tenant"],
+				title: {
+					ar: "وثّق الإخراج واطلب إعادة الوضع",
+					fr: "Constatez l'expulsion et demandez le rétablissement"
+				},
+				where: {
+					ar: "إن مُنعت من الدخول اليوم: الأمن لتحرير محضر إن وقع اعتداء أو كسر، ثم محكمة {wilaya} للاسترجاع. الشكوى الجزائية لا تُرجع المفتاح وحدها.",
+					fr: "Si l'accès vous est refusé aujourd'hui : la police pour un procès-verbal en cas de voie de fait, puis le tribunal de {wilaya} pour le rétablissement. La plainte pénale ne rend pas la clé à elle seule."
+				},
+				actions: [
+					{
+						ar: "صور الباب والقفل إن تغيّر، واحفظ عقد الإيجار ووصولات البدل وبطاقة الهوية.",
+						fr: "Photographiez la porte et la serrure si elle a changé. Gardez le bail, les quittances et la pièce d'identité."
+					},
+					{
+						ar: "اطلب في العريضة تمكينك من السكن إلى حين صدور حكم بالإخلاء إن كان العقد ما زال قائماً، أو التعويض إن وقع إخراج غير مشروع.",
+						fr: "Demandez dans la requête d'être rétabli jusqu'à un jugement d'expulsion si le bail court encore, ou une indemnité si l'expulsion est illicite."
+					},
+					{
+						ar: "لا تكسِر الباب بالمقابل. الواقعة الثانية لا تُصلح الأولى.",
+						fr: "Ne forcez pas la porte en retour. Un second fait n'efface pas le premier."
+					}
+				],
+				bring: [{
+					id: "t1",
+					label: {
+						ar: "عقد الإيجار ووصولات",
+						fr: "Bail et quittances"
+					}
+				}, {
+					id: "t2",
+					label: {
+						ar: "أي محضر أمن إن وُجد",
+						fr: "Procès-verbal de police, s'il existe"
+					}
+				}],
+				articleIds: [
+					"cpca-14",
+					"cpca-15",
+					"note-cpp"
+				],
+				caution: violence
+			}
+		]
+	},
+	{
+		id: "complaint",
+		group: "penal",
+		title: {
+			ar: "شكوى جزائية",
+			fr: "Plainte pénale"
+		},
+		lead: {
+			ar: "تُقدَّم للضابطة القضائية أو مباشرة لنيابة المحكمة التي وقع فيها الفعل. القانون الإجرائي الجزائي أُعيد تنظيمه في أغسطس 2025، فالمسار هنا إجرائي لا برقم مادة قديم.",
+			fr: "Elle se dépose à la police judiciaire ou directement au parquet du lieu des faits. La procédure pénale a été refondue en août 2025 : le chemin ici est procédural, sans ancien numéro d'article."
+		},
+		forum: {
+			ar: "أمن وطني أو درك وطني بمكان الفعل، أو نيابة الجمهورية بمحكمة {wilaya} إن كان الفعل في دائرتها.",
+			fr: "Sûreté nationale ou gendarmerie du lieu des faits, ou parquet du tribunal de {wilaya} si les faits sont dans son ressort."
+		},
+		articleIds: ["note-cpp"],
+		steps: [{
+			id: "write",
+			title: {
+				ar: "اكتب الوقائع لا الأوصاف",
+				fr: "Écrivez les faits, pas les qualificatifs"
+			},
+			where: {
+				ar: "قبل الشباك. صفحة فيها: من، ماذا، أين، متى، ومن الشهود، وما الضرر.",
+				fr: "Avant le guichet. Une page : qui, quoi, où, quand, les témoins, et le préjudice."
+			},
+			actions: [
+				{
+					ar: "لا تكيّف الجريمة باسمها القانوني إن لم تكن متأكداً. النيابة تكيّف. أنت تروي الوقائع.",
+					fr: "Ne qualifiez pas l'infraction si vous n'êtes pas sûr. Le parquet qualifie. Vous racontez les faits."
+				},
+				{
+					ar: "اجمع الدليل الموجود: صور، رسائل، شهادة طبية للضرر الجسدي، فواتير للضرر المالي.",
+					fr: "Rassemblez la preuve que vous avez : photos, messages, certificat médical pour le corporel, factures pour le financier."
+				},
+				{
+					ar: "الشهادة الطبية من طبيب أو مستشفى، بتاريخ قريب من الضرر، أقوى من الوصف الشفهي.",
+					fr: "Un certificat médical d'un médecin ou d'un hôpital, daté près du préjudice, vaut mieux qu'une description orale."
+				}
+			],
+			bring: [
+				{
+					id: "p1",
+					label: {
+						ar: "بطاقة الهوية",
+						fr: "Pièce d'identité"
+					}
+				},
+				{
+					id: "p2",
+					label: {
+						ar: "الشهادة الطبية إن وُجد ضرر جسدي",
+						fr: "Certificat médical s'il y a un préjudice corporel"
+					}
+				},
+				{
+					id: "p3",
+					label: {
+						ar: "نسخ من الرسائل أو الصور",
+						fr: "Copies des messages ou photos"
+					}
+				}
+			],
+			articleIds: ["note-cpp"],
+			caution: {
+				ar: "الشكوى الكيدية أو الوقائع التي تعرف أنها غير صحيحة تعرّضك للمساءلة. اكتب ما وقع وما رأيته.",
+				fr: "Une plainte calomnieuse, ou des faits que vous savez faux, vous expose. Écrivez ce qui s'est passé et ce que vous avez vu."
+			}
+		}, {
+			id: "file",
+			title: {
+				ar: "أودع واحتفظ برقم الملف",
+				fr: "Déposez et gardez le numéro"
+			},
+			where: {
+				ar: "وحدة الأمن أو الدرك، أو مكتب وكيل الجمهورية بمحكمة {wilaya}. اطلب نسخة من محضر الاستماع أو وصل الإيداع.",
+				fr: "Unité de police ou de gendarmerie, ou bureau du procureur au tribunal de {wilaya}. Demandez une copie de votre audition ou un récépissé."
+			},
+			actions: [
+				{
+					ar: "يمكنك الإيداع بالطريق الذي يتيحه المكتب، ومنه الإلكتروني حيث فُتح. لا ترسل الأصل الوحيد للمستند إن طُلبت نسخة.",
+					fr: "Déposez par la voie qu'offre le bureau, y compris l'électronique là où elle est ouverte. Ne remettez pas l'unique original si une copie suffit."
+				},
+				{
+					ar: "النيابة توجّه: حفظ، أو تحقيق، أو جدولة. تابع بالرقم ولا تفترض أن الصمت رفض.",
+					fr: "Le parquet oriente : classement, enquête, ou audience. Suivez avec le numéro. Le silence n'est pas un refus."
+				},
+				{
+					ar: "التعويض المدني له إجراء مستقل في النص الساري. اسأل أمانة الضبط في {wilaya} كيف يُقدَّم الادعاء المدني اليوم، ولا تستعمل نموذجاً مطبوعاً قبل 2025 وكأنه مطابق.",
+					fr: "Les dommages civils ont une procédure distincte dans le texte en vigueur. Demandez au greffe de {wilaya} comment constituer partie civile aujourd'hui. N'utilisez pas un imprimé d'avant 2025 comme s'il collait."
+				}
+			],
+			articleIds: ["note-cpp"]
+		}]
+	},
+	{
+		id: "cheque",
+		group: "penal",
+		title: {
+			ar: "شيك بلا رصيد",
+			fr: "Chèque sans provision"
+		},
+		lead: {
+			ar: "المستند الذي يفتح الباب هو شهادة عدم الدفع من البنك، مع أصل الشيك. بعدها طريق النيابة لاستفاء الرصيد، وطريق مدني مستقل للمبلغ إن لزم. لا يُعرض هنا رقم مادة جزائية قد يتغير مع تعديل الشيك.",
+			fr: "La pièce qui ouvre la porte est le certificat de non-paiement de la banque, avec l'original du chèque. Ensuite le parquet pour les poursuites, et une voie civile distincte pour la somme s'il le faut. Aucun numéro d'article pénal n'est affiché ici, parce que le régime du chèque a été modifié."
+		},
+		forum: {
+			ar: "وكالتك البنكية لشهادة عدم الدفع، ثم نيابة محكمة {wilaya} إن كان مكان الوفاء أو موطن الساحب في دائرتها. القسم المدني للمبلغ بالتوازي إن اخترت ذلك.",
+			fr: "Votre agence pour le certificat de non-paiement, puis le parquet du tribunal de {wilaya} si le lieu de paiement ou le domicile du tireur y est situé. La section civile pour la somme, en parallèle, si vous le choisissez."
+		},
+		articleIds: ["note-cpp", "cpca-15"],
+		steps: [{
+			id: "bank",
+			title: {
+				ar: "خذ شهادة عدم الدفع",
+				fr: "Obtenez le certificat de non-paiement"
+			},
+			where: {
+				ar: "البنك المسحوب عليه، الشباك الذي يرفض الوفاء. لا تكتفِ برفض شفهي.",
+				fr: "La banque tirée, le guichet qui refuse le paiement. Un refus oral ne suffit pas."
+			},
+			actions: [
+				{
+					ar: "قدّم الشيك في أجل تقديمه. إن فاتك الأجل البنكي فقد يسقط المسار الجزائي وإن بقي الدين المدني. اسأل البنك عن الأجل المتبقي قبل أن تتأخر.",
+					fr: "Présentez le chèque dans son délai de présentation. Passé le délai bancaire, la voie pénale peut tomber alors que la créance civile demeure. Demandez à la banque le délai restant."
+				},
+				{
+					ar: "اطلب شهادة عدم الدفع مكتوبة. البنك يشعر الساحب. احتفظ بالأصل. لا تكتفِ برفض شفهي.",
+					fr: "Demandez un certificat de non-paiement écrit. La banque avise le tireur. Gardez l'original. Un refus oral ne suffit pas."
+				},
+				{
+					ar: "لا تُسلّم أصل الشيك إلا مقابل وصل، وفي آخر خطوة لا في أول استشارة.",
+					fr: "Ne remettez l'original du chèque que contre récépissé, et au dernier guichet, pas à la première consultation."
+				}
+			],
+			bring: [{
+				id: "q1",
+				label: {
+					ar: "أصل الشيك",
+					fr: "Original du chèque"
+				}
+			}, {
+				id: "q2",
+				label: {
+					ar: "بطاقة الهوية",
+					fr: "Pièce d'identité"
+				}
+			}],
+			articleIds: ["note-cpp"],
+			caution: {
+				ar: "بعد إشعار الساحب يُمنح أجلاً قصيراً لتسوية الرصيد قبل المتابعة، وفق نظام الشيك الساري لدى البنك. لا تخترع عدد الأيام: اقرأه على الشهادة أو من الشباك.",
+				fr: "Après l'avis au tireur, un court délai de régularisation précède les poursuites, selon le régime du chèque en vigueur à la banque. N'inventez pas le nombre de jours : lisez-le sur le certificat ou au guichet."
+			}
+		}, {
+			id: "pros",
+			title: {
+				ar: "النيابة، ومعها أو بدونها الدعوى المدنية",
+				fr: "Le parquet, avec ou sans l'action civile"
+			},
+			where: {
+				ar: "نيابة محكمة {wilaya} بالشهادة وأصل الشيك وهويتك وعنوان الساحب. القسم المدني إن أردت الحكم بالمبلغ في مسار منفصل.",
+				fr: "Parquet du tribunal de {wilaya} avec le certificat, l'original, votre identité et l'adresse du tireur. Section civile si vous voulez un jugement sur la somme dans une voie séparée."
+			},
+			actions: [
+				{
+					ar: "الشكوى تُرفق بالشهادة لا بشرح طويل. المبلغ وتاريخ الشيك واسم الساحب كافيان في الورقة الأولى.",
+					fr: "La plainte joint le certificat, pas un long récit. Le montant, la date du chèque et le nom du tireur suffisent sur la première page."
+				},
+				{
+					ar: "إن دفع الساحب أثناء الأجل، خذ ما يُثبت الوفاء قبل أن تواصل الشكوى.",
+					fr: "Si le tireur paie pendant le délai, prenez la preuve du paiement avant de poursuivre la plainte."
+				},
+				{
+					ar: "الحكم الجزائي لا يضع المال في حسابك تلقائياً. للتنفيذ على المال، النسخة المدنية أو ما يحدده الحكم يُسلَّم للمحضر.",
+					fr: "Le jugement pénal ne verse pas l'argent sur votre compte. Pour exécuter sur les biens, la voie civile ou ce que le jugement désigne passe par l'huissier."
+				}
+			],
+			articleIds: [
+				"note-cpp",
+				"cpca-14",
+				"cpca-15"
+			]
+		}]
+	},
+	{
+		id: "status",
+		group: "papers",
+		title: {
+			ar: "تصحيح الحالة المدنية",
+			fr: "Rectification de l'état civil"
+		},
+		lead: {
+			ar: "الطريق يتغير مع نوع الخطأ. خطأ الحجز غير الخطأ الجوهري، وتغيير اللقب غير تصحيح عقد محرر في الخارج.",
+			fr: "La voie change avec le type d'erreur. Une erreur de saisie n'est pas une erreur substantielle, et le changement de nom n'est pas la rectification d'un acte établi à l'étranger."
+		},
+		forum: {
+			ar: "بلدية قيد العقد في {wilaya}، أو وكيل الجمهورية لدى محكمة تلك البلدية. العقود القنصلية: محكمة سيدي امحمد بالجزائر.",
+			fr: "Commune de transcription à {wilaya}, ou procureur du tribunal de cette commune. Actes consulaires : tribunal de Sidi M'Hamed à Alger."
+		},
+		articleIds: ["note-etat"],
+		choice: {
+			question: {
+				ar: "ما الذي تريد تصحيحه؟",
+				fr: "Que voulez-vous rectifier ?"
+			},
+			options: [
+				{
+					id: "typo",
+					label: {
+						ar: "خطأ في الحجز أو غلط مادي بحت",
+						fr: "Erreur de saisie ou erreur purement matérielle"
+					},
+					detail: {
+						ar: "حرف ناقص، رقم مقلوب، إغفال مادي. يبدأ من ضابط الحالة المدنية أو من وكيل الجمهورية.",
+						fr: "Lettre manquante, chiffre inversé, omission matérielle. On commence chez l'officier d'état civil ou chez le procureur."
+					}
+				},
+				{
+					id: "substance",
+					label: {
+						ar: "بيان مخالف للحقيقة أو نقص جوهري",
+						fr: "Mention contraire à la vérité, ou omission substantielle"
+					},
+					detail: {
+						ar: "يمر بوكيل الجمهورية ثم أمر رئيس المحكمة. ليس تصحيحاً يوقعه موظف الشباك وحده.",
+						fr: "Cela passe par le procureur puis une ordonnance du président du tribunal. Un agent de guichet ne le signe pas seul."
+					}
+				},
+				{
+					id: "name",
+					label: {
+						ar: "تغيير اللقب",
+						fr: "Changement de nom"
+					},
+					detail: {
+						ar: "طلب إلى وزير العدل، يُودع لدى وكيل الجمهورية لمكان الولادة.",
+						fr: "Demande au ministre de la Justice, déposée chez le procureur du lieu de naissance."
+					}
+				},
+				{
+					id: "abroad",
+					label: {
+						ar: "عقد حُرر في الخارج",
+						fr: "Acte établi à l'étranger"
+					},
+					detail: {
+						ar: "تصحيح قضائي من محكمة سيدي امحمد بالجزائر، وفق الأمر 70-20.",
+						fr: "Rectification judiciaire du tribunal de Sidi M'Hamed à Alger, selon l'ordonnance 70-20."
+					}
+				}
+			]
+		},
+		steps: [
+			{
+				id: "typo",
+				when: ["typo"],
+				title: {
+					ar: "ابدأ بالبلدية ثم بالنيابة إن لزم",
+					fr: "Commencez à la commune, puis au parquet s'il le faut"
+				},
+				where: {
+					ar: "ضابط الحالة المدنية ببلدية قيد العقد. يمكن طلب تصحيح أخطاء الحجز عن بعد عبر شباك وزارة الداخلية. إن كان الخطأ مادياً بحتاً ويحتاج قراراً، فوكيل الجمهورية لمحكمة تلك البلدية.",
+					fr: "L'officier d'état civil de la commune de l'acte. Les erreurs de saisie peuvent se demander à distance via le guichet du ministère de l'Intérieur. Si l'erreur matérielle exige une décision, le procureur du tribunal de cette commune."
+				},
+				actions: [{
+					ar: "احمل العقد الخاطئ وبطاقة الهوية وما يُظهر الكتابة الصحيحة (عقد آخر، دفتر عائلي).",
+					fr: "Apportez l'acte erroné, la pièce d'identité, et ce qui montre la graphie correcte (un autre acte, le livret)."
+				}, {
+					ar: "إن قيل لك إن الخطأ ليس مادياً، لا تُصر على الشباك. انتقل إلى مسار البيان المخالف للحقيقة.",
+					fr: "Si l'on vous dit que l'erreur n'est pas matérielle, n'insistez pas au guichet. Passez à la voie de la mention contraire à la vérité."
+				}],
+				bring: [{
+					id: "e1",
+					label: {
+						ar: "العقد المراد تصحيحه",
+						fr: "L'acte à rectifier"
+					}
+				}, {
+					id: "e2",
+					label: {
+						ar: "وثيقة تُظهر البيان الصحيح",
+						fr: "Une pièce qui montre la mention exacte"
+					}
+				}],
+				articleIds: ["note-etat"],
+				caution: {
+					ar: "الشباك الإلكتروني لأخطاء الحجز تنشره وزارة الداخلية على prestations.interieur.gov.dz. إن تغيّر الرابط، ادخل من موقع الوزارة لا من رسالة مجهولة.",
+					fr: "Le guichet des erreurs de saisie est publié par le ministère de l'Intérieur sur prestations.interieur.gov.dz. Si le lien change, partez du site du ministère, pas d'un message inconnu."
+				}
+			},
+			{
+				id: "substance",
+				when: ["substance"],
+				title: {
+					ar: "طلب إلى وكيل الجمهورية",
+					fr: "Demande au procureur"
+				},
+				where: {
+					ar: "نيابة المحكمة التي تقع في دائرة اختصاصها البلدية التي حُرر فيها العقد أو سُجل. في {wilaya} إن كانت البلدية هنا.",
+					fr: "Parquet du tribunal dans le ressort duquel se trouve la commune où l'acte a été dressé ou transcrit. À {wilaya} si la commune y est."
+				},
+				actions: [
+					{
+						ar: "قدّم طلباً مكتوباً منك أو ممن له مصلحة، مع العقد والوثائق التي تُظهر الحقيقة.",
+						fr: "Déposez une demande écrite, de vous ou de qui a intérêt, avec l'acte et les pièces qui montrent la vérité."
+					},
+					{
+						ar: "وكيل الجمهورية يقدم التماسه إلى رئيس المحكمة. التصحيح يكون بأمر قضائي لا بتأشيرة إدارية.",
+						fr: "Le procureur présente ses réquisitions au président du tribunal. La rectification se fait par ordonnance, pas par un visa administratif."
+					},
+					{
+						ar: "الأمر يُرسل إلى ضابط الحالة المدنية للتنفيذ بسعي من النيابة. تابع البلدية حتى يُؤشر العقد.",
+						fr: "L'ordonnance est transmise à l'officier d'état civil pour exécution, à la diligence du parquet. Suivez à la commune jusqu'à ce que l'acte soit annoté."
+					}
+				],
+				articleIds: ["note-etat"]
+			},
+			{
+				id: "name",
+				when: ["name"],
+				title: {
+					ar: "تغيير اللقب عبر وزير العدل",
+					fr: "Changement de nom par le ministre de la Justice"
+				},
+				where: {
+					ar: "وكيل الجمهورية لدى محكمة مكان ولادتك. إن وُلدت خارج الوطن، البعثة الدبلوماسية لمقر إقامتك ترسل الطلب إلى وكيل الجمهورية بمحكمة سيدي امحمد.",
+					fr: "Le procureur du tribunal de votre lieu de naissance. Né à l'étranger : la mission diplomatique de votre résidence transmet au procureur du tribunal de Sidi M'Hamed."
+				},
+				actions: [{
+					ar: "الطلب موجّه إلى وزير العدل حافظ الأختام، ويُودع عند وكيل الجمهورية لا في البلدية.",
+					fr: "La demande est adressée au ministre de la Justice et déposée chez le procureur, pas à la commune."
+				}, {
+					ar: "تغيير اللقب، إن قُبل، يتبعه تصحيح في عقود الحالة المدنية. لا تعدّل العقود بيدك قبل القرار.",
+					fr: "S'il est accepté, le changement de nom est suivi d'une rectification des actes. Ne corrigez pas les actes à la main avant la décision."
+				}],
+				articleIds: ["note-etat"]
+			},
+			{
+				id: "abroad",
+				when: ["abroad"],
+				title: {
+					ar: "العقد القنصلي",
+					fr: "L'acte consulaire"
+				},
+				where: {
+					ar: "محكمة سيدي امحمد بالجزائر العاصمة، لا محكمة {wilaya}، حتى لو كنت تقيم هنا.",
+					fr: "Le tribunal de Sidi M'Hamed à Alger, pas le tribunal de {wilaya}, même si vous résidez ici."
+				},
+				actions: [{
+					ar: "العقود المسجلة في القنصلية لا تُصحح إلا بحكم قضائي من هذه المحكمة، وفق ما تنشره المصالح القنصلية عن الأمر 70-20.",
+					fr: "Les actes enregistrés au consulat ne se rectifient que par décision de ce tribunal, selon ce que les services consulaires publient de l'ordonnance 70-20."
+				}, {
+					ar: "الملف المعتاد: طلب خطي، وثيقة هوية، العقد باللغة العربية، وثائق الوالدين، الدفتر العائلي. قدّمه أنت أو وكيل بوكالة رسمية.",
+					fr: "Dossier usuel : demande écrite, pièce d'identité, l'acte en arabe, pièces des parents, livret de famille. Déposez-le vous-même ou par mandataire avec procuration."
+				}],
+				bring: [
+					{
+						id: "e3",
+						label: {
+							ar: "العقد العربي المراد تصحيحه",
+							fr: "L'acte en arabe à rectifier"
+						}
+					},
+					{
+						id: "e4",
+						label: {
+							ar: "دفتر عائلي ونسخة",
+							fr: "Livret de famille et copie"
+						}
+					},
+					{
+						id: "e5",
+						label: {
+							ar: "وكالة رسمية إن قدّمه غيرك",
+							fr: "Procuration si quelqu'un d'autre dépose"
+						}
+					}
+				],
+				articleIds: ["note-etat"]
+			}
+		]
+	},
+	{
+		id: "admin",
+		group: "papers",
+		title: {
+			ar: "إلغاء قرار إداري",
+			fr: "Annulation d'une décision administrative"
+		},
+		lead: {
+			ar: "أمامك أربعة أشهر من التبليغ الشخصي للقرار الفردي، أو من نشر القرار الجماعي أو التنظيمي. التظلم إلى الإدارة مصدرة القرار جائز في الأجل نفسه، وهو ليس شرطاً لقبول الدعوى.",
+			fr: "Vous avez quatre mois à compter de la notification personnelle de la décision individuelle, ou de la publication de la décision collective ou réglementaire. Le recours gracieux à l'auteur de l'acte est possible dans le même délai, et il n'est pas une condition de recevabilité."
+		},
+		forum: {
+			ar: "المحكمة الإدارية المختصة بـ {wilaya}. بعد القانون 22-13، استئناف حكمها أمام المحكمة الإدارية للاستئناف لا مباشرةً كدرجة وحيدة أمام مجلس الدولة.",
+			fr: "Le tribunal administratif compétent pour {wilaya}. Depuis la loi 22-13, l'appel de son jugement va à la cour administrative d'appel, et non plus comme un unique degré direct devant le Conseil d'État."
+		},
+		articleIds: ["cpca-829", "cpca-830"],
+		steps: [
+			{
+				id: "read",
+				title: {
+					ar: "اقرأ تاريخ التبليغ قبل أي ورقة",
+					fr: "Lisez la date de notification avant tout papier"
+				},
+				where: {
+					ar: "على القرار نفسه أو على محضر تبليغه. الأجل لا يُحسب من يوم علمك بالخبر.",
+					fr: "Sur la décision elle-même ou sur son procès-verbal de notification. Le délai ne se compte pas du jour où vous avez appris la nouvelle."
+				},
+				actions: [
+					{
+						ar: "القرار الفردي: أربعة أشهر من التبليغ الشخصي بنسخة منه.",
+						fr: "Décision individuelle : quatre mois à compter de la notification personnelle d'une copie."
+					},
+					{
+						ar: "القرار الجماعي أو التنظيمي: أربعة أشهر من تاريخ النشر.",
+						fr: "Décision collective ou réglementaire : quatre mois à compter de la publication."
+					},
+					{
+						ar: "انسخ القرار كاملاً مع رقم إصداره والجهة التي أصدرته.",
+						fr: "Copiez la décision entière, avec son numéro et l'autorité qui l'a prise."
+					}
+				],
+				articleIds: ["cpca-829"],
+				delay: {
+					ar: "أربعة أشهر. فواتها يُسقط دعوى الإلغاء في الأصل. لا تنتظر جواب تظلم إن كان الأجل أوشك، إلا إذا حسبت أثره مع محامٍ على النص الساري.",
+					fr: "Quatre mois. Les laisser passer fait tomber, en principe, le recours en annulation. N'attendez pas la réponse à un recours gracieux si le délai est proche, sauf à en calculer l'effet avec un avocat sur le texte en vigueur."
+				}
+			},
+			{
+				id: "grace",
+				title: {
+					ar: "التظلم اختياري",
+					fr: "Le recours gracieux est facultatif"
+				},
+				where: {
+					ar: "الجهة التي أصدرت القرار، كتابةً، مع وصل إيداع. احتفظ بنسختك.",
+					fr: "L'autorité auteur de l'acte, par écrit, avec un accusé de dépôt. Gardez votre copie."
+				},
+				actions: [
+					{
+						ar: "يجوز التظلم خلال أجل المادة 829. هو ليس شرطاً لقبول الإلغاء أمام المحكمة الإدارية.",
+						fr: "Le recours gracieux est permis dans le délai de l'article 829. Il n'est pas une condition de recevabilité de l'annulation devant le tribunal administratif."
+					},
+					{
+						ar: "إن قدّمته، أرفق لاحقاً ما يُثبت إيداعه مع عريضة الدعوى.",
+						fr: "Si vous le formez, joignez ensuite la preuve de son dépôt à la requête."
+					},
+					{
+						ar: "لا تعتبر سكوت الإدارة إلغاءً. الإلغاء القضائي حكم، لا صمت.",
+						fr: "Ne traitez pas le silence de l'administration comme une annulation. L'annulation judiciaire est un jugement, pas un silence."
+					}
+				],
+				articleIds: ["cpca-830"]
+			},
+			{
+				id: "file",
+				skeleton: true,
+				title: {
+					ar: "عريضة أمام المحكمة الإدارية",
+					fr: "Requête devant le tribunal administratif"
+				},
+				where: {
+					ar: "أمانة ضبط المحكمة الإدارية المختصة بولايتك ({wilaya})، لا أمانة المحكمة العادية، إلا إذا أرشدك الشباك إلى تنظيم محلي مختلف.",
+					fr: "Greffe du tribunal administratif compétent pour votre wilaya ({wilaya}), pas le greffe du tribunal judiciaire, sauf indication locale contraire au guichet."
+				},
+				actions: [
+					{
+						ar: "العريضة تبيّن القرار المطعون فيه، تاريخ التبليغ أو النشر، والوجه الذي تطلب الإلغاء من أجله (عيب اختصاص، شكل، سبب، مخالفة القانون).",
+						fr: "La requête identifie la décision attaquée, la date de notification ou de publication, et le moyen d'annulation (incompétence, forme, motif, violation de la loi)."
+					},
+					{
+						ar: "أرفق نسخة القرار وما يُثبت التبليغ. النقص في الأجل ظاهر من الورقة الأولى.",
+						fr: "Joignez la copie de la décision et la preuve de notification. Le délai manqué se voit dès la première page."
+					},
+					{
+						ar: "استئناف الحكم لاحقاً أمام المحكمة الإدارية للاستئناف. أجل ذلك الاستئناف تغيّر مع قانون 22-13: خذه من التبليغ، لا من مقال قديم كان يجعل مجلس الدولة درجة الاستئناف الوحيدة.",
+						fr: "L'appel ultérieur va à la cour administrative d'appel. Ce délai a changé avec la loi 22-13 : prenez-le sur la notification, pas dans un article ancien qui faisait du Conseil d'État l'unique degré d'appel."
+					}
+				],
+				articleIds: [
+					"cpca-829",
+					"cpca-830",
+					"cpca-15"
+				]
+			}
+		]
+	},
+	{
+		id: "marriage",
+		group: "family",
+		title: {
+			ar: "ترخيص زواج",
+			fr: "Autorisation de mariage"
+		},
+		lead: {
+			ar: "أهلية الزواج تتم بتمام 19 سنة. قبل ذلك، الترخيص قضائي لمصلحة أو ضرورة. التعدد يحتاج ترخيص رئيس المحكمة لمكان مسكن الزوجية بعد إخبار الزوجتين.",
+			fr: "La capacité de mariage est acquise à 19 ans révolus. Avant cela, l'autorisation est judiciaire, pour intérêt ou nécessité. La polygamie exige l'autorisation du président du tribunal du domicile conjugal, après information des deux épouses."
+		},
+		forum: {
+			ar: "رئيس المحكمة أو قسم شؤون الأسرة بمحكمة {wilaya}، حسب موضوع الترخيص. ضابط الحالة المدنية لا يوقّع الترخيص مكان القاضي.",
+			fr: "Le président du tribunal ou la section familiale du tribunal de {wilaya}, selon l'autorisation. L'officier d'état civil ne signe pas l'autorisation à la place du juge."
+		},
+		articleIds: [
+			"fam-7",
+			"fam-8",
+			"fam-9b"
+		],
+		choice: {
+			question: {
+				ar: "أي ترخيص؟",
+				fr: "Quelle autorisation ?"
+			},
+			options: [{
+				id: "age",
+				label: {
+					ar: "زواج قبل 19 سنة",
+					fr: "Mariage avant 19 ans"
+				},
+				detail: {
+					ar: "المادة 7. القاضي يرخص لمصلحة أو ضرورة بعد التأكد من قدرة الطرفين.",
+					fr: "Article 7. Le juge autorise pour intérêt ou nécessité après avoir constaté l'aptitude des deux parties."
+				}
+			}, {
+				id: "poly",
+				label: {
+					ar: "زواج بامرأة ثانية",
+					fr: "Mariage avec une seconde épouse"
+				},
+				detail: {
+					ar: "المادة 8. الإخبار، الموافقة، المبرر الشرعي، والقدرة على العدل. الطلب إلى رئيس محكمة مسكن الزوجية.",
+					fr: "Article 8. Information, accord, motif légitime, capacité d'équité. Demande au président du tribunal du domicile conjugal."
+				}
+			}]
+		},
+		steps: [{
+			id: "age",
+			when: ["age"],
+			title: {
+				ar: "ملف الترخيص بالقاصر",
+				fr: "Dossier d'autorisation du mineur"
+			},
+			where: {
+				ar: "أمانة ضبط محكمة {wilaya}. اسأل: ترخيص زواج دون السن يُجدول عند رئيس المحكمة أو عند قاضي شؤون الأسرة في هذه الجهة.",
+				fr: "Greffe du tribunal de {wilaya}. Demandez si l'autorisation avant l'âge est audiencée chez le président ou chez le juge de la famille, dans cette juridiction."
+			},
+			actions: [
+				{
+					ar: "بيّن المصلحة أو الضرورة في طلب مكتوب. الرغبة وحدها ليست الصيغة التي يستعملها النص.",
+					fr: "Exposez l'intérêt ou la nécessité dans une demande écrite. Le souhait seul n'est pas la formule du texte."
+				},
+				{
+					ar: "أرفق شهادات الميلاد وبطاقة الولي. زواج القاصر يتولاه وليه، والقاضي وليّ من لا ولي له.",
+					fr: "Joignez les actes de naissance et la pièce du wali. Le mariage du mineur est conclu par son wali. Le juge est le wali de qui n'en a pas."
+				},
+				{
+					ar: "بعد الترخيص فقط يُبرم العقد أمام الموثق أو ضابط الحالة المدنية، بتوفر الأهلية المرخّص بها والصداق والولي والشاهدين وانتفاء المانع.",
+					fr: "Ce n'est qu'après l'autorisation que l'acte est passé devant le notaire ou l'officier d'état civil, avec la capacité autorisée, la dot, le wali, deux témoins et l'absence d'empêchement."
+				}
+			],
+			bring: [{
+				id: "a1",
+				label: {
+					ar: "شهادتا الميلاد",
+					fr: "Les deux actes de naissance"
+				}
+			}, {
+				id: "a2",
+				label: {
+					ar: "طلب مكتوب بالمصلحة أو الضرورة",
+					fr: "Demande écrite exposant l'intérêt ou la nécessité"
+				}
+			}],
+			articleIds: [
+				"fam-7",
+				"fam-11",
+				"fam-9",
+				"fam-9b"
+			]
+		}, {
+			id: "poly",
+			when: ["poly"],
+			title: {
+				ar: "ترخيص التعدد",
+				fr: "Autorisation de polygamie"
+			},
+			where: {
+				ar: "رئيس المحكمة لمكان مسكن الزوجية. إن كان المسكن في {wilaya} فهذا رئيسها. موافقة الزوجتين تُثبت أمامه لا برسالة خاصة.",
+				fr: "Le président du tribunal du domicile conjugal. Si le domicile est à {wilaya}, c'est son président. L'accord des deux femmes s'établit devant lui, pas par un message privé."
+			},
+			actions: [
+				{
+					ar: "أخبر الزوجة السابقة والمرأة التي تقبل على الزواج بها قبل الطلب.",
+					fr: "Informez l'épouse précédente et la femme que vous allez épouser, avant la demande."
+				},
+				{
+					ar: "قدّم طلب الترخيص مع ما يُثبت المبرر الشرعي والقدرة على العدل وشروط الحياة الزوجية.",
+					fr: "Déposez la demande d'autorisation avec ce qui établit le motif légitime, la capacité d'équité et les conditions de la vie conjugale."
+				},
+				{
+					ar: "بدون هذا الترخيص، الزواج الجديد يخالف المادة 8، وللزوجة أن تطلب التطليق على هذا الأساس.",
+					fr: "Sans cette autorisation, le nouveau mariage contrevient à l'article 8, et l'épouse peut demander le divorce sur ce fondement."
+				}
+			],
+			articleIds: ["fam-8", "fam-53"],
+			caution: {
+				ar: "الترخيص سلطة لرئيس المحكمة بعد التأكد، ليس حقاً يُستلم من الشباك لمجرد الطلب.",
+				fr: "L'autorisation est un pouvoir du président du tribunal après vérification, pas un droit retiré au guichet sur simple demande."
+			}
+		}]
+	}
+];
+var caseById = new Map(cases.map((c) => [c.id, c]));
+//#endregion
+export { tatliqGrounds as i, cases as n, groups as r, caseById as t };

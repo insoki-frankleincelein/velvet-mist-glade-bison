@@ -1,0 +1,44 @@
+[
+  {
+    "id": "famille",
+    "title": { "ar": "قانون الأسرة", "fr": "Code de la famille" },
+    "instrument": null,
+    "articles": []
+  },
+  {
+    "id": "civil",
+    "title": { "ar": "القانون المدني", "fr": "Code civil" },
+    "instrument": null,
+    "articles": []
+  },
+  {
+    "id": "cpca",
+    "title": { "ar": "قانون الإجراءات المدنية والإدارية", "fr": "Code de procédure civile et administrative" },
+    "instrument": null,
+    "articles": []
+  },
+  {
+    "id": "penal",
+    "title": { "ar": "قانون العقوبات", "fr": "Code pénal" },
+    "instrument": null,
+    "articles": []
+  },
+  {
+    "id": "cpp",
+    "title": { "ar": "قانون الإجراءات الجزائية", "fr": "Code de procédure pénale" },
+    "instrument": null,
+    "articles": []
+  },
+  {
+    "id": "travail",
+    "title": { "ar": "قانون العمل", "fr": "Code du travail" },
+    "instrument": null,
+    "articles": []
+  },
+  {
+    "id": "commerce",
+    "title": { "ar": "القانون التجاري", "fr": "Code de commerce" },
+    "instrument": null,
+    "articles": []
+  }
+]

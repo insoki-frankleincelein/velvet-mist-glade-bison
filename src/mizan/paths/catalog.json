@@ -1,0 +1,158 @@
+[
+  {
+    "id": "divorce",
+    "status": "GUIDED",
+    "title": { "ar": "الطلاق", "fr": "Divorce", "darija": null },
+    "note": { "ar": "زوج، تراضٍ، طلب الزوجة، خلع. الخطوات تُكتب بعد اعتماد المخطط.", "fr": "Mari, accord, demande de l'épouse, khul'. Étapes après validation du schéma." }
+  },
+  {
+    "id": "custody-nafaqa",
+    "status": "GUIDED",
+    "title": { "ar": "الحضانة والنفقة", "fr": "Garde et entretien", "darija": null },
+    "note": { "ar": "هيكل فقط.", "fr": "Coquille seulement." }
+  },
+  {
+    "id": "marriage-auth",
+    "status": "GUIDED",
+    "title": { "ar": "ترخيص الزواج", "fr": "Autorisation de mariage", "darija": null },
+    "note": { "ar": "هيكل فقط.", "fr": "Coquille seulement." }
+  },
+  {
+    "id": "succession",
+    "status": "TO_VERIFY",
+    "title": { "ar": "التركة", "fr": "Succession", "darija": null },
+    "note": { "ar": "المسار الكامل في paths/succession.json. كله قيد التحقق.", "fr": "Chemin complet dans paths/succession.json. Tout est à vérifier." }
+  },
+  {
+    "id": "labour",
+    "status": "GUIDED",
+    "title": { "ar": "نزاع عمل فردي", "fr": "Conflit individuel du travail", "darija": null },
+    "note": { "ar": "أجل ما بعد محضر عدم الصلح مذكور في الشروح. لا يُخزَّن رقماً هنا حتى يُستورد النص.", "fr": "Un délai après le PV est cité dans les commentaires. Aucun chiffre stocké ici tant que le texte n'est pas importé." }
+  },
+  {
+    "id": "debt",
+    "status": "GUIDED",
+    "title": { "ar": "دين أو عقد", "fr": "Créance ou contrat", "darija": null },
+    "note": { "ar": "هيكل فقط.", "fr": "Coquille seulement." }
+  },
+  {
+    "id": "eviction",
+    "status": "GUIDED",
+    "title": { "ar": "إخلاء دون كسر القفل", "fr": "Expulsion sans forcer la serrure", "darija": null },
+    "note": { "ar": "هيكل فقط. المنع العملي: لا تغيّر القفل بنفسك.", "fr": "Coquille. Interdit pratique : ne changez pas la serrure vous-même." }
+  },
+  {
+    "id": "criminal-complaint",
+    "status": "GUIDED",
+    "title": { "ar": "شكوى", "fr": "Plainte", "darija": null },
+    "note": { "ar": "هيكل فقط. لا رقم مادة جزائية.", "fr": "Coquille. Aucun numéro d'article pénal." }
+  },
+  {
+    "id": "cheque",
+    "status": "GUIDED",
+    "title": { "ar": "شيك بلا رصيد", "fr": "Chèque sans provision", "darija": "الشيك" },
+    "note": { "ar": "هيكل فقط.", "fr": "Coquille seulement." }
+  },
+  {
+    "id": "civil-status",
+    "status": "GUIDED",
+    "title": { "ar": "تصحيح الحالة المدنية", "fr": "État civil", "darija": null },
+    "note": { "ar": "هيكل فقط.", "fr": "Coquille seulement." }
+  },
+  {
+    "id": "admin-annul",
+    "status": "GUIDED",
+    "title": { "ar": "إلغاء قرار إداري", "fr": "Annulation administrative", "darija": null },
+    "note": { "ar": "أجل الإلغاء مذكور في الشروح. لا يُخزَّن رقماً هنا حتى يُستورد النص.", "fr": "Un délai d'annulation est cité dans les commentaires. Aucun chiffre stocké ici." }
+  },
+  {
+    "id": "land-title",
+    "status": "GUIDED",
+    "title": { "ar": "عقار ودفتر عقاري", "fr": "Immeuble et livret foncier", "darija": null },
+    "note": { "ar": "مسار جديد. بلا خطوات حتى الاعتماد.", "fr": "Nouveau. Sans étapes avant validation." }
+  },
+  {
+    "id": "traffic-insurance",
+    "status": "GUIDED",
+    "title": { "ar": "حادث مرور وتأمين", "fr": "Accident et assurance", "darija": null },
+    "note": { "ar": "مسار جديد. بلا خطوات حتى الاعتماد.", "fr": "Nouveau. Sans étapes avant validation." }
+  },
+  {
+    "id": "consumer",
+    "status": "GUIDED",
+    "title": { "ar": "نزاع استهلاك", "fr": "Litige de consommation", "darija": null },
+    "note": { "ar": "مسار جديد. بلا خطوات حتى الاعتماد.", "fr": "Nouveau. Sans étapes avant validation." }
+  },
+  {
+    "id": "neighbour",
+    "status": "GUIDED",
+    "title": { "ar": "نزاع جوار", "fr": "Trouble de voisinage", "darija": null },
+    "note": { "ar": "مسار جديد. بلا خطوات حتى الاعتماد.", "fr": "Nouveau. Sans étapes avant validation." }
+  },
+  {
+    "id": "commercial-lease",
+    "status": "GUIDED",
+    "title": { "ar": "إيجار تجاري", "fr": "Bail commercial", "darija": null },
+    "note": { "ar": "مسار جديد. بلا خطوات حتى الاعتماد.", "fr": "Nouveau. Sans étapes avant validation." }
+  },
+  {
+    "id": "company-partners",
+    "status": "GUIDED",
+    "title": { "ar": "نزاع بين الشركاء", "fr": "Associés", "darija": null },
+    "note": { "ar": "مسار جديد. بلا خطوات حتى الاعتماد.", "fr": "Nouveau. Sans étapes avant validation." }
+  },
+  {
+    "id": "work-accident",
+    "status": "GUIDED",
+    "title": { "ar": "حادث عمل", "fr": "Accident du travail", "darija": null },
+    "note": { "ar": "مسار جديد. بلا خطوات حتى الاعتماد.", "fr": "Nouveau. Sans étapes avant validation." }
+  },
+  {
+    "id": "kafala",
+    "status": "GUIDED",
+    "title": { "ar": "كفالة", "fr": "Kafala", "darija": null },
+    "note": { "ar": "مسار جديد. بلا خطوات حتى الاعتماد.", "fr": "Nouveau. Sans étapes avant validation." }
+  },
+  {
+    "id": "judgment-enforcement",
+    "status": "GUIDED",
+    "title": { "ar": "تنفيذ حكم", "fr": "Exécution d'un jugement", "darija": null },
+    "note": { "ar": "مسار جديد. بلا خطوات حتى الاعتماد.", "fr": "Nouveau. Sans étapes avant validation." }
+  },
+  {
+    "id": "filiation",
+    "status": "GUIDED",
+    "title": { "ar": "إثبات نسب", "fr": "Filiation", "darija": null },
+    "note": { "ar": "مسار جديد. بلا خطوات حتى الاعتماد.", "fr": "Nouveau. Sans étapes avant validation." }
+  },
+  {
+    "id": "coownership",
+    "status": "GUIDED",
+    "title": { "ar": "شيوع خارج التركة", "fr": "Indivision hors succession", "darija": null },
+    "note": { "ar": "مسار جديد. بلا خطوات حتى الاعتماد.", "fr": "Nouveau. Sans étapes avant validation." }
+  },
+  {
+    "id": "construction-works",
+    "status": "GUIDED",
+    "title": { "ar": "أشغال ومقاولة", "fr": "Travaux et entreprise", "darija": null },
+    "note": { "ar": "مسار جديد. بلا خطوات حتى الاعتماد.", "fr": "Nouveau. Sans étapes avant validation." }
+  },
+  {
+    "id": "tax-dispute",
+    "status": "GUIDED",
+    "title": { "ar": "منازعة ضريبية", "fr": "Contentieux fiscal", "darija": null },
+    "note": { "ar": "مسار جديد. بلا خطوات حتى الاعتماد.", "fr": "Nouveau. Sans étapes avant validation." }
+  },
+  {
+    "id": "building-permit",
+    "status": "GUIDED",
+    "title": { "ar": "رخصة بناء", "fr": "Permis de construire", "darija": null },
+    "note": { "ar": "مسار جديد. بلا خطوات حتى الاعتماد.", "fr": "Nouveau. Sans étapes avant validation." }
+  },
+  {
+    "id": "open-file",
+    "status": "GUIDED",
+    "title": { "ar": "ملف مفتوح دائماً", "fr": "Dossier toujours ouvert", "darija": null },
+    "note": { "ar": "إذا لم يُطابق شيء، اكتب الوقائع واسأل أمانة الضبط أي قسم. لا مخرج مسدود.", "fr": "Si rien ne correspond, écrivez les faits et demandez le guichet. Pas d'impasse." }
+  }
+]

@@ -1,0 +1,87 @@
+{
+  "id": "succession",
+  "status": "TO_VERIFY",
+  "title": { "ar": "التركة", "fr": "Succession", "darija": null },
+  "lead": {
+    "ar": "مسار إجرائي قيد التحقق. لا مادة، لا أجل، لا رسم. أكّد القسم عند أمانة الضبط.",
+    "fr": "Chemin de procédure à vérifier. Pas d'article, pas de délai, pas de taxe. Confirmez la section au greffe."
+  },
+  "steps": [
+    {
+      "id": "papers",
+      "rung": "main",
+      "urgent": false,
+      "title": { "ar": "اجمع ما يثبت الوفاة والورثة", "fr": "Réunissez la preuve du décès et des héritiers", "darija": null },
+      "where": { "ar": "بلدية مكان الوفاة، ثم البلدية التي تعرف الأسرة. الولاية: {wilaya}.", "fr": "Commune du décès, puis celle qui connaît la famille. Wilaya : {wilaya}." },
+      "file": { "ar": "طلب شهادة وفاة وشهادة عائلية. ليس عريضة بعد.", "fr": "Demande de certificat de décès et de certificat familial. Pas encore une requête." },
+      "bring": [
+        { "id": "id", "label": { "ar": "وثيقة هويتك", "fr": "Votre pièce d'identité" } },
+        { "id": "death-clue", "label": { "ar": "أي ورقة تذكر مكان الوفاة", "fr": "Tout papier qui situe le décès" } }
+      ],
+      "deadline": {
+        "status": "TO_VERIFY",
+        "days": null,
+        "text": { "ar": "الأجل غير مثبت. أكّده عند أمانة الضبط قبل الإيداع.", "fr": "Délai non établi. Confirmez-le au greffe avant de déposer." }
+      },
+      "cost": { "kind": "ASK_DEVIS", "min_da": null, "max_da": null, "currency": "DZD", "last_updated": null, "source": null },
+      "articles": [],
+      "risks": { "ar": "قسمة بلا شهادة وفاة قصة عائلية، ليست ملفاً.", "fr": "Un partage sans certificat de décès est un récit, pas un dossier." },
+      "next_action": { "ar": "استخرج شهادة الوفاة قبل أي توقيع.", "fr": "Retirez le certificat de décès avant toute signature." },
+      "tip_darija": null,
+      "do_not": []
+    },
+    {
+      "id": "notary-if-agree",
+      "rung": "main",
+      "urgent": false,
+      "title": { "ar": "الموثق إن اتفق الراشدون", "fr": "Le notaire si les majeurs sont d'accord", "darija": null },
+      "where": { "ar": "مكتب موثق في {wilaya}.", "fr": "Une étude de notaire à {wilaya}." },
+      "file": { "ar": "طلب فريضة ثم قسمة ودية إن وقّع كل وريث راشد.", "fr": "Demande de dévolution, puis partage amiable si chaque héritier majeur signe." },
+      "bring": [
+        { "id": "death", "label": { "ar": "شهادة الوفاة", "fr": "Certificat de décès" } },
+        { "id": "family", "label": { "ar": "الشهادة العائلية", "fr": "Certificat familial" } },
+        { "id": "ids", "label": { "ar": "بطاقات الورثة", "fr": "Pièces des héritiers" } },
+        { "id": "assets", "label": { "ar": "ما تعرفونه من عقارات وحسابات", "fr": "Les biens et comptes que vous connaissez" } }
+      ],
+      "deadline": {
+        "status": "TO_VERIFY",
+        "days": null,
+        "text": { "ar": "لا أجل مخزّن. الموثق يقول ما ينقص.", "fr": "Aucun délai stocké. Le notaire dit ce qui manque." }
+      },
+      "cost": { "kind": "ASK_DEVIS", "min_da": null, "max_da": null, "currency": "DZD", "last_updated": null, "source": null },
+      "articles": [],
+      "risks": { "ar": "هذا التطبيق لا يحسب الأنصبة. الفريضة عند الموثق أو القاضي.", "fr": "Cette application ne calcule pas les parts. La dévolution est chez le notaire ou le juge." },
+      "next_action": { "ar": "اطلب من الموثق قائمة الورق قبل أن تتنقل الورثة كلهم.", "fr": "Demandez au notaire la liste des pièces avant de déplacer tous les héritiers." },
+      "tip_darija": null,
+      "do_not": [
+        { "ar": "لا توقّع تنازلاً عن حصة قاصر.", "fr": "Ne signez pas une renonciation à la part d'un mineur." }
+      ]
+    },
+    {
+      "id": "partition",
+      "rung": "unblock",
+      "urgent": false,
+      "title": { "ar": "قسمة قضائية إن رفض أحدهم الإمضاء", "fr": "Partage judiciaire si l'un refuse de signer", "darija": null },
+      "where": { "ar": "القسم الذي يدلّك عليه أمين الضبط في محكمة {wilaya}. غالباً يُسأل عن شؤون الأسرة. لا تفترض القسم.", "fr": "La section que le greffe de {wilaya} vous indique. On demande souvent la famille. Ne supposez pas la section." },
+      "file": { "ar": "عريضة قسمة ضد كل الورثة، لا ضد الرافض وحده.", "fr": "Requête en partage contre tous les héritiers, pas contre le seul récalcitrant." },
+      "bring": [
+        { "id": "death2", "label": { "ar": "شهادة الوفاة", "fr": "Certificat de décès" } },
+        { "id": "heirs", "label": { "ar": "ما يسمّي الورثة وعناوينهم", "fr": "Ce qui nomme les héritiers et leurs adresses" } },
+        { "id": "refusal", "label": { "ar": "ما يُظهر الرفض: رسالة، محضر، أو غياب متكرر", "fr": "Ce qui montre le refus : lettre, procès-verbal, ou absences répétées" } }
+      ],
+      "deadline": {
+        "status": "TO_VERIFY",
+        "days": null,
+        "text": { "ar": "الأجل غير مثبت. أكّده عند أمانة الضبط قبل الإيداع.", "fr": "Délai non établi. Confirmez-le au greffe avant de déposer." }
+      },
+      "cost": { "kind": "ASK_DEVIS", "min_da": null, "max_da": null, "currency": "DZD", "last_updated": null, "source": null },
+      "articles": [],
+      "risks": { "ar": "رفض الإمضاء لا يوقف الدعوى إن قُيدت ضد الجميع. إسقاط وريث من العريضة يوقفها.", "fr": "Le refus de signer n'arrête pas l'action si elle vise tout le monde. Oublier un héritier l'arrête." },
+      "next_action": { "ar": "اكتب أسماء كل الورثة في العريضة حتى من يرفض.", "fr": "Écrivez tous les héritiers dans la requête, y compris celui qui refuse." },
+      "tip_darija": null,
+      "do_not": [
+        { "ar": "لا تنتظر إمضاءه لتفتح الدعوى.", "fr": "N'attendez pas sa signature pour ouvrir l'action." }
+      ]
+    }
+  ]
+}
